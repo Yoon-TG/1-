@@ -10,14 +10,30 @@
 
 nav{
   height: 60px;
-  position: absolute;
+  position: fixed;
   left: 100px;
 }
 
 .banner{
-  background-color: #FEDD9B;
-  height: 300px;
-  text-align: center;
+  height: 650px;
+  background-image: url('https://ik.imagekit.io/uhpparxr6/main/main-header/main-header-d-pc.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.banner span{
+  position: relative;
+  left: 150px;
+  top: 100px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 20px;
+}
+
+.banner span .under{
+  font-weight: 100;
+  font-size: 15px;
 }
 
 .banner button{

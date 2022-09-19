@@ -25,12 +25,21 @@ function Main() {
         </nav>
 
         <div className='banner'>
-          <h4>못생겨도 맛있다</h4>
-          <h4>친환경 못난이 채소박스</h4>
-          <p>조금씩 다양하게, 불필요한 낭비없이</p>
+          <span>
+          <p>못생겨도 맛있다</p>
+          <p>친환경 못난이 채소박스</p>
+          <p className='under'>조금씩 다양하게, 불필요한 낭비없이</p>
           <button>시작하기</button>
+          </span>
         </div>
 
+        <div>
+          {/* 이미지 파일 추가하기 */}
+        </div>
+
+        <div>
+          {/* 지속 가능한 식탁~ */}
+        </div>
     </div>
   );
 }

@@ -4,10 +4,6 @@
   padding: 0;
 }
 
-.Main {
-  text-align: center;
-}
-
 nav{
   height: 60px;
   position: fixed;
@@ -42,4 +38,20 @@ nav{
   background-color:#FF6741;
   border : 1px #FF6741;
   color : white
+}
+
+.middleBanner .leftText{
+  text-align: left;
+  position: relative;
+  left: 150px;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.middleBanner .rightText{
+  text-align: right;
+  position: relative;
+  left: 600px;
+  font-weight: bold;
+  font-size: 24px;
 }

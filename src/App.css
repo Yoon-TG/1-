@@ -15,5 +15,15 @@ nav{
 }
 
 .banner{
+  background-color: #FEDD9B;
+  height: 300px;
+  text-align: center;
+}
 
+.banner button{
+  width: 160px;
+  height: 50px;
+  background-color:#FF6741;
+  border : 1px #FF6741;
+  color : white
 }

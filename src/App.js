@@ -24,7 +24,7 @@ function Main() {
           </div>
         </nav>
 
-        <div className='banner'>
+        <div className='FirstBanner'>
           <span>
           <p>못생겨도 맛있다</p>
           <p>친환경 못난이 채소박스</p>
@@ -33,22 +33,35 @@ function Main() {
           </span>
         </div>
 
-        <div className='middleBanner'>  
-          <img style={{width: 'auto', height:'130px', textAlign: 'center'}} src='https://ik.imagekit.io/uhpparxr6/main/main_vp/main_vp_pc_cBSZrC968.png?ik-sdk-version=javascript-1.4.3&updatedAt=1655786748538&ik-sdk-version=react-1.1.1'></img>
-          <br />
-          <br />
-          <br />
+        <div className='secondBanner' >  
+          <div className='secondBannerImg' style={{textAlign: 'center'}}>
+            <img style={{width: 'auto', height:'130px'}} src='https://ik.imagekit.io/uhpparxr6/main/main_vp/main_vp_pc_cBSZrC968.png?ik-sdk-version=javascript-1.4.3&updatedAt=1655786748538&ik-sdk-version=react-1.1.1'></img>
+          </div>
+          <div className='blankBig'></div>
           <div>
             <span className='leftText'>이렇게 많은 분들이</span>
             <span className='rightText'>전체 만족도   </span>
             <span className='rightText'>   전체 리뷰 수</span>
             <br />
             <span className='leftText'>지속 가능한 식탁을 만들고 있어요!</span>
-            <span className='rightText'>4.8       </span>
+            <span className='rightText'>4.8      </span>
             <span className='rightText'>7257</span>
+            <div className='blankSmall'></div>
           </div>
-
+          <div className='secondBannerAni'>
+            <img src='https://ik.imagekit.io/uhpparxr6/pc_review_thumb-2_PxTishY16.png?ik-sdk-version=react-1.1.1' />
+          </div>
+          <div className='blankSmall'></div>
+          <button className='secondBannerButton'>모든 리뷰 보기  →</button>
         </div>
+        <div className='blankBig'></div>
+
+        <div className='thirdBanner'>
+          <img className='leftImg'src='https://ik.imagekit.io/uhpparxr6/main-potato_r1bCa_tdt.jpg?ik-sdk-version=react-1.1.1'></img>
+          <img className='rightImg' src='https://ik.imagekit.io/uhpparxr6/main/Group_4654_GSbTNC1RF.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1660614621280&ik-sdk-version=react-1.1.1'></img>
+        </div>
+        <div className='blankBig'></div>
+        <div className='blankSmall'></div>
 
         <div >
           <div>

@@ -4,13 +4,23 @@
   padding: 0;
 }
 
+.blankBig{
+  height: 70px;
+}
+
+.blankSmall{
+  height: 30px;
+}
+
 nav{
   height: 60px;
   position: fixed;
   left: 100px;
+  background-color: white;
 }
 
-.banner{
+.FirstBanner{
+  width: auto;
   height: 650px;
   background-image: url('https://ik.imagekit.io/uhpparxr6/main/main-header/main-header-d-pc.png');
   background-size: cover;
@@ -18,7 +28,7 @@ nav{
   background-position: center;
 }
 
-.banner span{
+.FirstBanner span{
   position: relative;
   left: 150px;
   top: 100px;
@@ -27,20 +37,21 @@ nav{
   line-height: 20px;
 }
 
-.banner span .under{
+.FirstBanner span .under{
   font-weight: 100;
   font-size: 15px;
 }
 
-.banner button{
+.FirstBanner button{
   width: 160px;
   height: 50px;
   background-color:#FF6741;
   border : 1px #FF6741;
+  border-radius: 5px;
   color : white
 }
 
-.middleBanner .leftText{
+.secondBanner .leftText{
   text-align: left;
   position: relative;
   left: 150px;
@@ -48,10 +59,44 @@ nav{
   font-size: 24px;
 }
 
-.middleBanner .rightText{
+.secondBanner .rightText{
   text-align: right;
   position: relative;
   left: 600px;
   font-weight: bold;
   font-size: 24px;
+}
+
+.secondBannerAni img{
+  width: auto;
+  height: 400px;
+}
+
+.secondBannerButton{
+  width: 160px;
+  height: 50px;
+  background-color:#979CA6;
+  border : 1px #979CA6;
+  border-radius: 2px;
+  color : white;
+  position: relative;
+  left: 650px;
+}
+
+.thirdBanner{
+  width: auto;
+  height: 450px;
+  background-color: #B78E68;
+}
+
+.thirdBanner .leftImg{
+  width: 650px;
+  height: 450px;
+}
+
+.thirdBanner .rightImg{
+  width: auto;
+  height: auto;
+  position: relative;
+  left: 200px;
 }

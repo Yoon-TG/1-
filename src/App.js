@@ -1,8 +1,40 @@
 import logo from './logo.svg';
 import './App.css';
-import Carousel from 'react-bootstrap/Carousel';
+import {Container, Row, Col,Card} from 'react-bootstrap';
+import { useState } from 'react';
+import blogTxt from './components/blogTxt.js';
+
 
 function Main() {
+
+  let [blogTxt, setBlogTxt] = useState([
+    {
+      id:'blog1',
+      imgPath:'../public/images/apples.jpg',
+      text:'aaa'
+      // text:`예쁘지 않은 사과가<br/>
+      // 버려지면서 생기는 일&gt;`
+    },
+    {
+      id:'blog2',
+      imgPath:'../public/images/farmer.jpg',
+      text:'aaa'
+      // text:`못난이 채소,<br/>
+      // 어디서 어떻게 오는가?&gt;`
+    },
+    {
+      id:'blog3',
+      imgPath:'../public/images/potatoes.jpg',
+      text:'aaa'
+      // text:`울퉁불퉁해도<br/>
+      // 맛있으니 괜찮아&gt;`
+    }
+  ]);
+
+
+
+
+
   return (
     <div>
       <div className='navbar'>
@@ -167,9 +199,39 @@ function Main() {
           <div className='eightthBannerCarousel'>  
           </div>
       </div>
+
       <div className='eightthBannerButtonBox'>
         <p>못생겨도 맛있는 친환경 못난이 채소박스, 어글리어스</p>
         <button className='eightthBannerButton'>시작하기</button>
+      </div>
+
+      <div className='ninethBanner'>
+        <p style={{border:'bold', fontSize:'24px'}}>어글리어스가 전하고 싶은 이야기</p>
+        <div className='ninethBannerGrid'>
+          <Container>
+            <Row>
+              {/* {blogTxt.map((data,i)=>{
+                return(
+                  <Col>
+                    <blogTxt key={data.id} data={data}></blogTxt>
+                  </Col>
+                );
+              })} */}
+
+<Card className="bg-white text-light">
+        //     <Card.Img src='../public/images/cart.jpg' />
+        //     <Card.ImgOverlay>
+        //         <Card.Text>
+        //         {blogTxt[0].text}
+        //         </Card.Text>
+        //     </Card.ImgOverlay>
+        // </Card>
+            </Row>
+      </Container>
+        </div>
+
+        <p style={{color:'#B78E68', border:'bold', position:'relative', top:'0px',left:'800px'}}>블로그 더 보러가기 &gt;</p>
+        
       </div>
 
 

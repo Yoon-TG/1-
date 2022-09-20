@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import {Navbar, Container, Nav} from 'react-bootstrap';
+import Carousel from 'react-bootstrap/Carousel';
 
 function Main() {
   return (
@@ -163,9 +163,14 @@ function Main() {
         </div>
 
       <div className='eightthBanner'>
-        
+        <p>생산자님들의 Thank you letter</p>
+          <div className='eightthBannerCarousel'>  
+          </div>
       </div>
-
+      <div className='eightthBannerButtonBox'>
+        <p>못생겨도 맛있는 친환경 못난이 채소박스, 어글리어스</p>
+        <button className='eightthBannerButton'>시작하기</button>
+      </div>
 
 
 

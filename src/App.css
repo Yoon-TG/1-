@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  /* text-align: center; */
 }
 
 .blankBig{
@@ -12,7 +13,9 @@
   height: 30px;
 }
 
-nav{
+.navbar{
+  z-index: 1;
+  width: 1124px;
   height: 60px;
   position: fixed;
   left: 100px;
@@ -90,7 +93,7 @@ nav{
 }
 
 .thirdBanner .leftImg{
-  width: 650px;
+  width: 700px;
   height: 450px;
 }
 
@@ -99,4 +102,54 @@ nav{
   height: auto;
   position: relative;
   left: 200px;
+}
+
+.fourthBanner p{
+  text-align: left;
+  position: relative;
+  left:175px;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.fourthBanner img{
+  /* text-align: center; */
+  margin-left: 10px;
+  width: auto;
+  height: 500px;
+}
+
+.fifthBanner{
+  text-align: left;
+  position: relative;
+  left:175px;
+}
+
+.fifthBanner span{
+  font-size: 18px;
+}
+
+.fifthBanner .fifthBannerMain span{
+  z-index: 1;
+}
+
+.fifthBannerCircle{
+  width: 35px;
+  height: 35px;
+  /* border: 40px; */
+  background-color: #FFEDDF;
+  border-radius:70%;
+  position: relative;
+  left: 10px;
+  top: 35px;
+  z-index: 2;
+}
+
+.fifthBannerImg{
+  width: 500px;
+  height: 500px;
+  background-image: url('https://ik.imagekit.io/uhpparxr6/main-solution1.png?ik-sdk-version=react-1.1.1');
+  background-repeat: no-repeat;
+  background-size: contain;
+  float: right;
 }

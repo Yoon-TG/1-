@@ -1,9 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
+import {Navbar, Container, Nav} from 'react-bootstrap';
 
 function Main() {
   return (
     <div>
+      <div className='navbar'>
         <nav class="navbar navbar-expand-lg bg-light">
           <div class="container-fluid">
             <a class="navbar-brand" href="#">
@@ -23,6 +25,7 @@ function Main() {
             </div>
           </div>
         </nav>
+      </div>  
 
         <div className='FirstBanner'>
           <span>
@@ -63,13 +66,76 @@ function Main() {
         <div className='blankBig'></div>
         <div className='blankSmall'></div>
 
-        <div >
-          <div>
-            
-          </div>
-          
-          
+        <div className='fourthBanner' style={{textAlign:'center'}}>
+          <p>이들이 못난이가 된 사연</p>
+          <img src='https://ik.imagekit.io/uhpparxr6/pc_vegetable_stories_type_B_ml8MCK4Oj.png?ik-sdk-version=javascript-1.4.3&updatedAt=1655081841582&ik-sdk-version=react-1.1.1'></img>
         </div>
+        <div className='blankBig'></div>
+  
+        <div className='fifthBanner'>
+        <div className='fifthBannerImg' /> 
+        {/*배너 이미지 */}
+         {/* <div className='fifthBannerImg'> */}
+              {/* <img src='https://ik.imagekit.io/uhpparxr6/main-solution1.png?ik-sdk-version=react-1.1.1'></img> */}
+              {/* <img src='https://ik.imagekit.io/uhpparxr6/main-solution2.png?ik-sdk-version=react-1.1.1'></img>
+              <img src='https://ik.imagekit.io/uhpparxr6/main-solution3.png?ik-sdk-version=react-1.1.1'></img> */}
+            {/* </div> */}
+
+          <p>이렇게 해결해요</p>
+          <p style={{fontWeight:'bold', fontSize:'24px'}}>생산자와 소비자, 환경에도<br/>
+          더 이로운 방식으로
+          </p>
+          <div className='fifthBannerMain'>
+            <div>
+              
+              <p>
+                <div className='fifthBannerCircle'></div>
+                <span style={{fontWeight:'bold', fontSize:'24px', position:'relative', left:'10px', zIndex:'1'}}>1</span>
+                <span style={{fontWeight:'bold', position:'relative', left:'45px', marginBottom:'40px'}}>수확 직후 직매입</span><br/>
+                <span style={{position:'relative', left:'60px'}}>판로를 찾지 못한 농산물들을<br/>
+                농부님께 수확 2~7일 이내 직접 공급받아요.</span>
+              </p>
+              
+            </div>
+            <div>
+              <p>
+                <div className='fifthBannerCircle'></div>
+                <span style={{fontWeight:'bold', fontSize:'24px', position:'relative', left:'10px', zIndex:'1'}}>2</span>
+                <span style={{fontWeight:'bold', position:'relative', left:'45px', marginBottom:'40px'}}>조금씩 다양하게 소포장</span><br/>
+                <span style={{position:'relative', left:'60px'}}>
+                가구 수에 맞게 소량으로 포장해요.</span>
+              </p>
+              {/* <p style={{fontWeight:'bold', fontSize:'24px'}}>2</p>
+              <p>조금씩 다양하게 소포장</p>
+              <p>가구 수에 맞게 소량으로 포장해요.</p> */}
+            </div>
+            <div>
+                <div className='fifthBannerCircle'></div>
+                <span style={{fontWeight:'bold', fontSize:'24px', position:'relative', left:'10px', zIndex:'1'}}>3</span>
+                <span style={{fontWeight:'bold', position:'relative', left:'45px', marginBottom:'40px'}}>집 앞까지 정기배송</span><br/>
+                <span style={{position:'relative', left:'60px'}}>
+                중간 유통 절차없이 즉시 보내드려요.</span>
+              {/* <p style={{fontWeight:'bold', fontSize:'24px'}}>3</p>
+              <p>집 앞까지 정기배송</p>
+              <p>중간 유통 절차없이 즉시 보내드려요.</p> */}
+            </div>
+            <br />
+            <p style={{position:'relative', left:'500px', color:'#EB6440'}}>구독 신청하기></p>
+          </div>
+          <div className='blankBig'/>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+        
     </div>
   );
 }

@@ -22,6 +22,11 @@
   background-color: white;
 }
 
+.bannerHeader{
+  font-weight:bold;
+  font-size:24px;
+}
+
 .FirstBanner{
   width: auto;
   height: 650px;
@@ -117,8 +122,6 @@
   text-align: left;
   position: relative;
   left:175px;
-  font-weight: bold;
-  font-size: 24px;
 }
 
 .fourthBanner img{
@@ -187,12 +190,29 @@
   top: 120px;
 }
 
-.sixthBannerButton{
+.sixthBannerButtonBox{
+  margin-top: 200px;
+  margin-bottom: 100px;
+}
+
+.sixthBannerButtonBox .sixthBannerButton{
   width: 450px;
   height: 50px;
   background-color: #EB6440;
   color: white;
   border: #EB6440;
   border-radius: 3px;
+}
+
+.seventhBanner{
+  text-align: left;
+  position: relative;
+  left:175px;
+}
+
+.seventhBanner img{
+  margin-bottom: 50px;
+  width: auto;
+  height: 250px;
 }
 

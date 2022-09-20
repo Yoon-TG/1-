@@ -67,7 +67,7 @@ function Main() {
         <div className='blankSmall'></div>
 
         <div className='fourthBanner' style={{textAlign:'center'}}>
-          <p>이들이 못난이가 된 사연</p>
+          <p className='bannerHeader'>이들이 못난이가 된 사연</p>
           <img src='https://ik.imagekit.io/uhpparxr6/pc_vegetable_stories_type_B_ml8MCK4Oj.png?ik-sdk-version=javascript-1.4.3&updatedAt=1655081841582&ik-sdk-version=react-1.1.1'></img>
         </div>
         <div className='blankBig'></div>
@@ -82,7 +82,7 @@ function Main() {
               {/* </div> */}
 
             <p>이렇게 해결해요</p>
-            <p style={{fontWeight:'bold', fontSize:'24px'}}>생산자와 소비자, 환경에도<br/>
+            <p className='bannerHeader'>생산자와 소비자, 환경에도<br/>
             더 이로운 방식으로
             </p>
             <div className='fifthBannerMain'>
@@ -119,7 +119,7 @@ function Main() {
                 <p>중간 유통 절차없이 즉시 보내드려요.</p> */}
               </div>
               <br />
-              <p style={{position:'relative', left:'500px', color:'#EB6440'}}>구독 신청하기></p>
+              <p style={{position:'relative', left:'500px', color:'#EB6440'}}>구독 신청하기&gt;</p>
             </div>
             <div className='blankBig'/>
         </div>
@@ -127,7 +127,7 @@ function Main() {
         <div className='sixthBanner'>
           <div className='sixthBannerImg' />
             <p>이렇게 보내드려요</p>
-            <p style={{fontWeight:'bold', fontSize:'24px'}}>가장 신선한 제철 채소를<br/>
+            <p className='bannerHeader'>가장 신선한 제철 채소를<br/>
             소량씩 즐겨요
             </p>
             <div className='sixthBannerMain'>
@@ -145,14 +145,26 @@ function Main() {
               </p>
             </div>
         </div>
-        <div className='blankBig'/>
-        <div className='blankBig'/>
-        <div className='blankBig'/>
-        <button className='sixthBannerButton'>시작하기</button>
 
+        <div className='sixthBannerButtonBox'>
+          <button className='sixthBannerButton'>시작하기</button>
+        </div>
+        
+        <div className='seventhBanner'>
+          <p className='bannerHeader'>못난이 채소박스 구독,<br/>
+            이렇게 진행돼요
+          </p>
+          <p>7~10종의 다양한 못난이 채소들을 구출해 보내드려요. <br/>
+            미리 품목을 알 수 있고 배송 일정을 자유롭게 조정할 수 있어요.
+          </p>
+          <div className='seventhBannerImg'>
+            <img src='https://ik.imagekit.io/uhpparxr6/how-to-use-subscription/pc_how_to_use_subscription_fihXmhbMl.png?ik-sdk-version=javascript-1.4.3&updatedAt=1655344454300&ik-sdk-version=react-1.1.1'/>
+          </div>
+        </div>
 
-
-
+      <div className='eightthBanner'>
+        
+      </div>
 
 
 

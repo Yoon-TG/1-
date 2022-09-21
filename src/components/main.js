@@ -60,7 +60,7 @@ function MainPage(){
               <div>
                 <p>
                   <div className='fifthBannerCircle'></div>
-                  <span style={{fontWeight:'bold', fontSize:'24px', position:'relative', left:'10px', zIndex:'1'}}>1</span>
+                  <span style={{fontWeight:'bold', fontSize:'24px', position:'relative', left:'10px'}}>1</span>
                   <span style={{fontWeight:'bold', position:'relative', left:'45px', marginBottom:'40px'}}>수확 직후 직매입</span><br/>
                   <span style={{position:'relative', left:'60px'}}>판로를 찾지 못한 농산물들을<br/>
                   농부님께 수확 2~7일 이내 직접 공급받아요.</span>
@@ -70,7 +70,7 @@ function MainPage(){
               <div>
                 <p>
                   <div className='fifthBannerCircle'></div>
-                  <span style={{fontWeight:'bold', fontSize:'24px', position:'relative', left:'10px', zIndex:'1'}}>2</span>
+                  <span style={{fontWeight:'bold', fontSize:'24px', position:'relative', left:'10px'}}>2</span>
                   <span style={{fontWeight:'bold', position:'relative', left:'45px', marginBottom:'40px'}}>조금씩 다양하게 소포장</span><br/>
                   <span style={{position:'relative', left:'60px'}}>
                   가구 수에 맞게 소량으로 포장해요.</span>
@@ -78,7 +78,7 @@ function MainPage(){
               </div>
               <div>
                   <div className='fifthBannerCircle'></div>
-                  <span style={{fontWeight:'bold', fontSize:'24px', position:'relative', left:'10px', zIndex:'1'}}>3</span>
+                  <span style={{fontWeight:'bold', fontSize:'24px', position:'relative', left:'10px'}}>3</span>
                   <span style={{fontWeight:'bold', position:'relative', left:'45px', marginBottom:'40px'}}>집 앞까지 정기배송</span><br/>
                   <span style={{position:'relative', left:'60px'}}>
                   중간 유통 절차없이 즉시 보내드려요.</span>
@@ -141,7 +141,9 @@ function MainPage(){
           농산물들의 제 가치를 찾아, 음식물 폐기는 줄이고 친환경 땅을 늘림으로써<br/>
           소비자의 건강한 식탁과 미래를 위한 환경이 지속가능하게 합니다.
         </p>
-        <p>더 알아보기&gt;</p>
+        <p style={{cursor:'pointer'}} onClick={()=>{
+          navigate("/aboutUs")
+        }}>더 알아보기&gt;</p>
         <br/>
         &nbsp;
         <p className='bannerHeader' style={{wordSpacing:'45px'}}>339,664kg+ 259 208,508개</p>

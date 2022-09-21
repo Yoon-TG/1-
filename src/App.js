@@ -93,9 +93,6 @@ function Main() {
                   <span style={{position:'relative', left:'60px'}}>
                   가구 수에 맞게 소량으로 포장해요.</span>
                 </p>
-                {/* <p style={{fontWeight:'bold', fontSize:'24px'}}>2</p>
-                <p>조금씩 다양하게 소포장</p>
-                <p>가구 수에 맞게 소량으로 포장해요.</p> */}
               </div>
               <div>
                   <div className='fifthBannerCircle'></div>
@@ -103,9 +100,6 @@ function Main() {
                   <span style={{fontWeight:'bold', position:'relative', left:'45px', marginBottom:'40px'}}>집 앞까지 정기배송</span><br/>
                   <span style={{position:'relative', left:'60px'}}>
                   중간 유통 절차없이 즉시 보내드려요.</span>
-                {/* <p style={{fontWeight:'bold', fontSize:'24px'}}>3</p>
-                <p>집 앞까지 정기배송</p>
-                <p>중간 유통 절차없이 즉시 보내드려요.</p> */}
               </div>
               <br />
               <p style={{position:'relative', left:'500px', color:'#EB6440'}}>구독 신청하기&gt;</p>
@@ -154,12 +148,31 @@ function Main() {
       </div>
 
       <div className='lastBanner'>
-        
+        <p>미션</p>
+        <p className='bannerHeader'>지속가능한 식탁을 만듭니다.</p>
+        <p>
+          농산물의 폐기 문제는 지구 온난화의 원인이 되고 물과 비료, 노동 에너지의 낭비로 이어집니다.<br/>
+          농산물들의 제 가치를 찾아, 음식물 폐기는 줄이고 친환경 땅을 늘림으로써<br/>
+          소비자의 건강한 식탁과 미래를 위한 환경이 지속가능하게 합니다.
+        </p>
+        <p>더 알아보기&gt;</p>
+        <br/>
+        &nbsp;
+        <p className='bannerHeader' style={{wordSpacing:'45px'}}>339,664kg+ 259 208,508개</p>
+        <p >&nbsp;구출한 농산물 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;함께 하는 농가  &nbsp; &nbsp; &nbsp;아낀 플라스틱</p>
+
       </div>
 
       <div className='footer'>
-        <p>고객센터</p>
-        <p>월-목요일</p>
+        <button className='askButton'>문의하기</button>
+        <button className='FAQButton'>자주 묻는 질문</button>
+        
+        <p>어글리어스 고객센터<span className='footerRightTxt'>02.1234.5678</span></p>
+        
+        <p>월-목요일 <span className='footerRightTxt'>11:00 ~ 18:00 (점심시간 12:00 ~ 13:00)</span></p>
+        <p>금요일        <span className='footerRightTxt'>09:00 ~ 18:00 (점심시간 12:00 ~ 13:00)</span></p>
+        <p>토·일·공휴일 <span className='footerRightTxt'>휴무</span></p>
+
       </div>
     </div>
   );

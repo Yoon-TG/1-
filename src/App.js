@@ -153,10 +153,14 @@ function Main() {
           <button className='seventhBannerButton'>시작하기</button>
       </div>
 
-      <div>
-        <p>??</p>
+      <div className='lastBanner'>
+        
       </div>
 
+      <div className='footer'>
+        <p>고객센터</p>
+        <p>월-목요일</p>
+      </div>
     </div>
   );
 }

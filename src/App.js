@@ -1,62 +1,32 @@
 import logo from './logo.svg';
 import './App.css';
-import {Container, Row, Col,Card} from 'react-bootstrap';
-import { useState } from 'react';
-import blogTxt from './components/blogTxt.js';
+import {Container, Navbar, Nav} from 'react-bootstrap';
+// import { useState } from 'react';
 
 
 function Main() {
 
-  let [blogTxt, setBlogTxt] = useState([
-    {
-      id:'blog1',
-      imgPath:'../public/images/apples.jpg',
-      text:'aaa'
-      // text:`예쁘지 않은 사과가<br/>
-      // 버려지면서 생기는 일&gt;`
-    },
-    {
-      id:'blog2',
-      imgPath:'../public/images/farmer.jpg',
-      text:'aaa'
-      // text:`못난이 채소,<br/>
-      // 어디서 어떻게 오는가?&gt;`
-    },
-    {
-      id:'blog3',
-      imgPath:'../public/images/potatoes.jpg',
-      text:'aaa'
-      // text:`울퉁불퉁해도<br/>
-      // 맛있으니 괜찮아&gt;`
-    }
-  ]);
-
-
-
-
-
   return (
     <div>
       <div className='navbar'>
-        <nav class="navbar navbar-expand-lg bg-light">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-              <img src={process.env.PUBLIC_URL+'/images/test.jpg'} style={{width:80}}></img>
-            </a>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav">
-                <a class="nav-link active" aria-current="page" href="#">미션</a>
-                <a class="nav-link" href="#">이용방법</a>
-                <a class="nav-link" href="#">못난이상점</a>
-                <a class="nav-link" href="#">레시피</a>
-              </div>
-              <div class="rightsideHeader">
-                <img src={process.env.PUBLIC_URL+'/images/cart.png'} style={{width:20}} alt='<a href="https://www.flaticon.com/kr/free-icons/" title="카트 아이콘">카트 아이콘  제작자: uicon - Flaticon</a>'></img>
-                <img src={process.env.PUBLIC_URL+'/images/person.png'} style={{width:25}} alt='<a href="https://www.flaticon.com/kr/free-icons/" title="사람 아이콘">사람 아이콘  제작자: spaceman.design - Flaticon</a>'></img>
-              </div>
-            </div>
-          </div>
-        </nav>
+        <Navbar>
+          <Container>
+            <Navbar.Brand className='brandImg' href="#">
+              <img src={process.env.PUBLIC_URL+'/navImg/test.jpg'}></img>
+            </Navbar.Brand>
+            <Nav className="me-auto">
+            <Nav.Link href="#">소개</Nav.Link>
+            <Nav.Link href="#">이용방법</Nav.Link>
+            <Nav.Link href="#">못난이 상점</Nav.Link>
+            <Nav.Link className='cartImg' href="#">
+              <img src={process.env.PUBLIC_URL+'/navImg/cart.png'}></img>
+            </Nav.Link>
+            <Nav.Link className='personImg' href="#">
+              <img src={process.env.PUBLIC_URL+'/navImg/person.png'}></img>
+            </Nav.Link>
+          </Nav>
+          </Container>
+        </Navbar>
       </div>  
 
         <div className='FirstBanner'>
@@ -69,10 +39,9 @@ function Main() {
         </div>
 
         <div className='secondBanner' >  
-          <div className='secondBannerImg' style={{textAlign: 'center'}}>
+          <div className='secondBannerImg'>          
             <img style={{width: 'auto', height:'130px'}} src='https://ik.imagekit.io/uhpparxr6/main/main_vp/main_vp_pc_cBSZrC968.png?ik-sdk-version=javascript-1.4.3&updatedAt=1655786748538&ik-sdk-version=react-1.1.1'></img>
           </div>
-          <div className='blankBig'></div>
           <div>
             <span className='leftText'>이렇게 많은 분들이</span>
             <span className='rightText'>전체 만족도&nbsp; &nbsp;</span>
@@ -86,33 +55,21 @@ function Main() {
           <div className='secondBannerAni'>
             <img src='https://ik.imagekit.io/uhpparxr6/pc_review_thumb-2_PxTishY16.png?ik-sdk-version=react-1.1.1' />
           </div>
-          <div className='blankSmall'></div>
           <button className='secondBannerButton'>모든 리뷰 보기&nbsp;&nbsp;&nbsp;→</button>
         </div>
-        <div className='blankBig'></div>
 
         <div className='thirdBanner'>
           <img className='leftImg'src='https://ik.imagekit.io/uhpparxr6/main-potato_r1bCa_tdt.jpg?ik-sdk-version=react-1.1.1'></img>
           <img className='rightImg' src='https://ik.imagekit.io/uhpparxr6/main/Group_4654_GSbTNC1RF.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1660614621280&ik-sdk-version=react-1.1.1'></img>
         </div>
-        <div className='blankBig'></div>
-        <div className='blankSmall'></div>
 
-        <div className='fourthBanner' style={{textAlign:'center'}}>
+        <div className='fourthBanner'>
           <p className='bannerHeader'>이들이 못난이가 된 사연</p>
           <img src='https://ik.imagekit.io/uhpparxr6/pc_vegetable_stories_type_B_ml8MCK4Oj.png?ik-sdk-version=javascript-1.4.3&updatedAt=1655081841582&ik-sdk-version=react-1.1.1'></img>
         </div>
-        <div className='blankBig'></div>
   
         <div className='fifthBanner'>
           <div className='fifthBannerImg' /> 
-          {/*배너 이미지 */}
-          {/* <div className='fifthBannerImg'> */}
-                {/* <img src='https://ik.imagekit.io/uhpparxr6/main-solution1.png?ik-sdk-version=react-1.1.1'></img> */}
-                {/* <img src='https://ik.imagekit.io/uhpparxr6/main-solution2.png?ik-sdk-version=react-1.1.1'></img>
-                <img src='https://ik.imagekit.io/uhpparxr6/main-solution3.png?ik-sdk-version=react-1.1.1'></img> */}
-              {/* </div> */}
-
             <p>이렇게 해결해요</p>
             <p className='bannerHeader'>생산자와 소비자, 환경에도<br/>
             더 이로운 방식으로
@@ -157,7 +114,9 @@ function Main() {
         </div>
 
         <div className='sixthBanner'>
-          <div className='sixthBannerImg' />
+          <div className='sixthBannerImg'>
+            <img src='https://ik.imagekit.io/uhpparxr6/main/main-vegetables-pc_Nel5vcXXo.png?ik-sdk-version=javascript-1.4.3&updatedAt=1659941827894&ik-sdk-version=react-1.1.1' />
+          </div>
             <p>이렇게 보내드려요</p>
             <p className='bannerHeader'>가장 신선한 제철 채소를<br/>
             소량씩 즐겨요
@@ -177,10 +136,6 @@ function Main() {
               </p>
             </div>
         </div>
-
-        <div className='sixthBannerButtonBox'>
-          <button className='sixthBannerButton'>시작하기</button>
-        </div>
         
         <div className='seventhBanner'>
           <p className='bannerHeader'>못난이 채소박스 구독,<br/>
@@ -194,49 +149,13 @@ function Main() {
           </div>
         </div>
 
-      <div className='eightthBanner'>
-        <p>생산자님들의 Thank you letter</p>
-          <div className='eightthBannerCarousel'>  
-          </div>
+      <div className='seventhBannerButtonBox'>
+          <button className='seventhBannerButton'>시작하기</button>
       </div>
 
-      <div className='eightthBannerButtonBox'>
-        <p>못생겨도 맛있는 친환경 못난이 채소박스, 어글리어스</p>
-        <button className='eightthBannerButton'>시작하기</button>
+      <div>
+        <p>??</p>
       </div>
-
-      <div className='ninethBanner'>
-        <p style={{border:'bold', fontSize:'24px'}}>어글리어스가 전하고 싶은 이야기</p>
-        <div className='ninethBannerGrid'>
-          <Container>
-            <Row>
-              {/* {blogTxt.map((data,i)=>{
-                return(
-                  <Col>
-                    <blogTxt key={data.id} data={data}></blogTxt>
-                  </Col>
-                );
-              })} */}
-
-<Card className="bg-white text-light">
-        //     <Card.Img src='../public/images/cart.jpg' />
-        //     <Card.ImgOverlay>
-        //         <Card.Text>
-        //         {blogTxt[0].text}
-        //         </Card.Text>
-        //     </Card.ImgOverlay>
-        // </Card>
-            </Row>
-      </Container>
-        </div>
-
-        <p style={{color:'#B78E68', border:'bold', position:'relative', top:'0px',left:'800px'}}>블로그 더 보러가기 &gt;</p>
-        
-      </div>
-
-
-
-
 
     </div>
   );

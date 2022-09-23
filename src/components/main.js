@@ -151,7 +151,7 @@ function MainPage(){
 
       </div>
 
-      <div className='footer'>
+      {/* <div className='footer'>
         <button className='askButton' onClick={()=>{
           alert('먼저 로그인하세요.')
         }}>문의하기</button>
@@ -164,7 +164,7 @@ function MainPage(){
         <p>월-목요일 <span className='footerRightTxt'>11:00 ~ 18:00 (점심시간 12:00 ~ 13:00)</span></p>
         <p>금요일        <span className='footerRightTxt'>09:00 ~ 18:00 (점심시간 12:00 ~ 13:00)</span></p>
         <p>토·일·공휴일 <span className='footerRightTxt'>휴무</span></p>
-        </div>
+        </div> */}
       </div>
     )
 }

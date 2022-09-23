@@ -1,4 +1,4 @@
-import React, { useRef, useState} from "react";
+import React, {useState} from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -11,17 +11,16 @@ import { Pagination , Autoplay} from "swiper";
 
 import {Container,Row,Col, Card} from 'react-bootstrap';
 
-import {useNavigate} from 'react-router-dom';
 
 function AboutUs(){
 
-let navigate = useNavigate();
+    // let [videoName, setVideoNames] = useState(['corn','rice','wheat','bean','carrot1','cucumber','tomato','carrot2']);
 
     return(
         <div>
             <div className="topBanner">
                 <div className="topBannerVideo">
-                    <video muted autoPlay controls loop="loops">
+                    <video muted autoPlay controls loop="loops" style={{pointerEvents:'none'}}>
                         <source src={process.env.PUBLIC_URL+'/videos/corn.mp4'} type="video/mp4" />
                         브라우저가 동영상 재생을 지원하지 않습니다.
                     </video>
@@ -72,12 +71,14 @@ let navigate = useNavigate();
                 </div>
             </div>
 
-            {/* 여기에 스크롤 애니메이션 넣을 거임 */}
+            {/* 여기에 스크롤 애니메이션 넣을 거임 -배경: 하얀색 - > 초록색 / 글자 가 위에서 아래로 스르륵*/}
             <div className='aboutUs_secondBanner'>
-                <div className='aboutUs_secondBannerText'>
+                {/* <div className='aboutUs_secondBannerText'>
                     <p>지구를 위해, 우리를 위해</p>
                     <p>우리는 못난이 채소들을 구출합니다.</p>
-                </div>
+                </div> */}
+            
+            
             </div>
 
             {/* 여기에 그리드 3개 -> 글 */}
@@ -114,6 +115,7 @@ let navigate = useNavigate();
                         <Row>
                             <Col>
                                 <p>구출한 농산물</p>
+                                <p>123143</p>
                             </Col>
                             <Col>
                                 <p>아낀 물의 양</p>
@@ -127,7 +129,7 @@ let navigate = useNavigate();
                         </Row>
                     </Container>
                     </div>
-                    <p>함께 못난이 농산물을 구출해나가며 지구를 위한 분명한 변화를 만들고 있습니다.</p>
+                    <p style={{position:'relative', top:'170px'}}>함께 못난이 농산물을 구출해나가며 지구를 위한 분명한 변화를 만들고 있습니다.</p>
 
             </div>
 
@@ -139,7 +141,7 @@ let navigate = useNavigate();
                             <Col>
                                 <Card className="text-white" style={{border:'1px solid none'}} >
                                 <Card.Img src="https://images.unsplash.com/photo-1599403417231-8387b0a3b7ad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80" alt="다양한 감자 사진" />
-                                <Card.ImgOverlay style={{backgroundImage: 'linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.1))'}}>
+                                <Card.ImgOverlay style={{backgroundImage: 'linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1))'}}>
                                     <Card.Title>울퉁불퉁해도 맛있으니 괜찮아</Card.Title>
                                     <Card.Text>
                                         유통 기준보다 너무 크거나 작은 감자들이 모였어요
@@ -163,7 +165,6 @@ let navigate = useNavigate();
                     <p 
                     style={{border:'bold', marginTop:'25px',position:'relative', left:'89%', cursor:'pointer'}}
                     onClick={()=>{
-                        // <a href="https://uglyus.co.kr/blogs" target='_blank'                     style={{border:'bold', marginTop:'25px',position:'relative', left:'89%', cursor:'pointer'}} />
                         window.open("https://uglyus.co.kr/blogs")
                     }}>더 보러가기 &gt;
                     </p>
@@ -173,6 +174,7 @@ let navigate = useNavigate();
             <div className="aboutUs_lastBanner">
                 <p className="bannerHeader" style={{textAlign:'center'}}>이런 곳과 함께하고 있어요!</p>
                 <div className="aboutUs_lastBannerImg">
+                    {/* 이미지 넣기 */}
                     
                 </div>
             </div>

@@ -40,7 +40,11 @@ function Main() {
         <Route path='/' element={<MainPage />} />
         <Route path='/main' element={<MainPage />} />
         <Route path='/aboutUs' element={<AboutUs />} />
-        <Route path='/manual' element={<Manual />} />
+        <Route path='/manual' element={<Manual />}>
+          {/* <Route path='/manual' element={<div>기본 이용 방법화면</div>}></Route>
+          <Route path='/manual/FAQ' element={<div style={{fontSize:'70px'}}>faq화면</div>}></Route>
+          <Route path='/review' element={<div>review 화면</div>}></Route> */}
+        </Route>
         <Route path='/store' element={<Store />} />
       </Routes>
 

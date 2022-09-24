@@ -113,7 +113,7 @@
 }
 
 .secondBannerAni{
-  width: 100vw;
+  width: 100%;
   height: 400px;
   display: flex;
   flex-wrap: nowrap;
@@ -147,7 +147,7 @@
 
 .thirdBanner{
   margin: 70px 0px 70px 0px;
-  width: 100vw;
+  width: 100%;
   height: 450px;
   background-color: #B78E68;
 }
@@ -267,7 +267,7 @@
 .lastBanner{
   margin-top: 70px;
   padding: 70px 250px 70px 250px;
-  width: 100vw;
+  width: 100%;
   height: 550px;
   background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1461354464878-ad92f492a5a0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80');
   background-repeat: no-repeat;

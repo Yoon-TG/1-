@@ -27,7 +27,7 @@ function Main() {
             <Nav.Link className='cartImg' href='/main'>
               <img src={process.env.PUBLIC_URL+'/navImg/cart.png'}></img>
             </Nav.Link>
-            <Nav.Link className='personImg' href="#">
+            <Nav.Link className='personImg' href="/aboutUs">
               <img src={process.env.PUBLIC_URL+'/navImg/person.png'}></img>
             </Nav.Link>
           </Nav>

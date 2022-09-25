@@ -32,9 +32,10 @@ function MainPage(){
             <span className='rightTextNum'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7257</span>
             <div className='blankSmall'></div>
           </div>
-          <div className='secondBannerAni'>
-            <img src='https://ik.imagekit.io/uhpparxr6/pc_review_thumb-2_PxTishY16.png?ik-sdk-version=react-1.1.1' />
-          </div>
+
+          {/* <div className='aniImg'>
+            <img src="https://ik.imagekit.io/uhpparxr6/pc_review_thumb-2_PxTishY16.png?ik-sdk-version=react-1.1.1" />
+          </div> */}
           <button className='secondBannerButton' onClick={()=>{
             navigate("/Manual#review")
           }}>모든 리뷰 보기&nbsp;&nbsp;&nbsp;→</button>

@@ -112,25 +112,30 @@
   color: #EB6440;
 }
 
-.secondBannerAni{
+.aniImg{
   width: 100%;
   height: 400px;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.aniImg img{
+  width: auto;
+  height: 400px; 
   display: flex;
   flex-wrap: nowrap;
-  animation: bannermove 30s linear infinite;
+  animation: bannermove 10s linear infinite;
+
 }
 
 @keyframes bannermove {
   0%{
+    /* background-position: 0 center; */
     transform: translate(0,0);
   }100%{
     transform: translate(-100%,0);
+    /* background-position: -1124px center; */
   }
-}
-
-.secondBannerAni img{
-  width: auto;
-  height: 400px;
 }
 
 .secondBannerButton{
@@ -146,16 +151,18 @@
 }
 
 .thirdBanner{
-  margin: 70px 0px 70px 0px;
+  margin: 70px 0px 130px 0px;
   width: 100%;
   height: 450px;
   background-color: #B78E68;
 }
 
 .thirdBanner .leftImg{
-  width: 700px;
+  width: 800px;
   height: 450px;
-  float: left;
+  position: relative;
+  top: 0px;
+  object-fit: cover;
 }
 
 .thirdBanner .rightImg{
@@ -166,11 +173,12 @@
 }
 
 .fourthBanner{
-  margin: 70px 0px 70px 0px;
+  margin: 70px 0px 100px 0px;
   text-align:center;
 }
 
 .fourthBanner p{
+  padding-bottom: 30px;
   text-align: left;
   position: relative;
   left:175px;
@@ -182,7 +190,7 @@
 }
 
 .fifthBanner{
-  margin: 70px 0px 70px 0px;
+  margin: 130px 0px 70px 0px;
   text-align: left;
   position: relative;
   left:175px;
@@ -346,7 +354,7 @@
 
 .aboutUs_firstBanner{
   margin-top: 100px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   padding-left:150px ; 
   width: 100%;
   height: 400px;
@@ -378,19 +386,39 @@
 }
 
 .aboutUs_secondBanner{
-  margin-bottom: 130px;
-  padding-top: 200px;
+  /* margin-bottom: 30px; */
+  padding-top: 150px;
   width: 100%;
-  height: 600px;
-  background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.5));
+  height: 500px;
   text-align: center;
   opacity: 0.8;
 }
 
+@keyframes showup{
+  0%{
+    opacity: 0%;
+    transform: translate(0, 100%);
+    color: white;
+    font-weight:bolder;
+  }100%{
+    opacity: 1;
+    transform: translate(0, 0);
+    color:forestgreen;
+    font-weight:bolder;
+  }
+}
+
+.aniTo{
+  position: relative;
+  animation: showup 5s;
+  color: forestgreen;
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+
 .aboutUs_thirdBanner{
-  margin: 0px 50px 150px 50px;
-  /* margin-right: 50px;
-  margin-bottom: 150px; */
+  margin-bottom: 180px;
   text-align: center;
 }
 
@@ -408,17 +436,19 @@
 }
 
 .aboutUs_fourthBanner{
-  margin-bottom: 100px;
+  margin-bottom: 150px;
   padding-top: 50px;
-  padding-left:50px;
+  /* padding-left:150px; */
   width: 100%;
   height: 500px;
-  background-color: lightgoldenrodyellow;
+  /* background-color: rgba(12, 118, 56, 0.43);  */
+  background-color: #3D8361;
+  color:#f0f3e9;
 }
 
 .aboutUs_fourthBanner .containerText{
   margin-top: 100px;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .aboutUs_fifthBanner{

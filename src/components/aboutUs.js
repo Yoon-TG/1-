@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -73,12 +73,7 @@ function AboutUs(){
 
             {/* 여기에 스크롤 애니메이션 넣을 거임 -배경: 하얀색 - > 초록색 / 글자 가 위에서 아래로 스르륵*/}
             <div className='aboutUs_secondBanner'>
-                {/* <div className='aboutUs_secondBannerText'>
-                    <p>지구를 위해, 우리를 위해</p>
-                    <p>우리는 못난이 채소들을 구출합니다.</p>
-                </div> */}
-            
-            
+                <ShowBanner />
             </div>
 
             {/* 여기에 그리드 3개 -> 글 */}
@@ -86,14 +81,14 @@ function AboutUs(){
                 {/* <p className="bannerHeader" style={{paddingLeft:'20px', textAlign:'left'}}>어글리어스는</p> */}
                 <Container>
                     <Row>
-                        <Col>
+                        <Col style={{marginRight:'20px'}}>
                             <img src="https://images.unsplash.com/photo-1570358934836-6802981e481e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"></img>
                             <p className="pHeader">환경을 생각합니다</p>
                             <p>농산물이 폐기되며 발생하는 메탄 가스 등은 지구 온난화의 원인이 됩니다.
                                 농산물 구출은 이러한 메탄 가스의 발생을 줄이고, 추가적으로 발생하는 자원과 노동력 낭비 또한 줄입니다.
                             </p>
                         </Col>
-                        <Col>
+                        <Col style={{marginRight:'20px'}}>
                             <img src={process.env.PUBLIC_URL+'/navImg/coll.jpg'}></img>
                             <p className="pHeader">불필요한 낭비를 막습니다</p>
                             <p>농산물을 겉모습으로 판단하던 기존의 기준에서 벗어나, 신선함과 맛 등 본질에 집중하여 상품을 선별합니다. 못난이 농산물을 헐값에 사들이는 관행을 깨고, 합리적인 가격으로 정산하여 건강한 생산이 지속되도록 힘 씁니다. </p>
@@ -108,7 +103,7 @@ function AboutUs(){
 
             {/* 짤막한 배너 */}
             <div className="aboutUs_fourthBanner">
-                <p className="bannerHeader">못난이 농산물 구출이 어떤 변화를 만들고 있을까요?</p>
+                <p className="bannerHeader" style={{paddingLeft:'150px'}}>못난이 농산물 구출이 어떤 변화를 만들고 있을까요?</p>
                 {/* 애니메이션 추가 > 숫자 올라가도록 */}
                 <div className="containerText">
                 <Container>
@@ -119,6 +114,7 @@ function AboutUs(){
                             </Col>
                             <Col>
                                 <p>아낀 물의 양</p>
+                                <p>123123</p>
                             </Col>
                             <Col>
                                 <p>아낀 플라스틱 수</p>
@@ -129,17 +125,17 @@ function AboutUs(){
                         </Row>
                     </Container>
                     </div>
-                    <p style={{position:'relative', top:'170px'}}>함께 못난이 농산물을 구출해나가며 지구를 위한 분명한 변화를 만들고 있습니다.</p>
+                    <p style={{position:'relative', top:'150px', paddingLeft:'150px'}}>함께 못난이 농산물을 구출해나가며 지구를 위한 분명한 변화를 만들고 있습니다.</p>
 
             </div>
 
             {/* 여기에 블로그 글 이동+더 보러가기(우선은 블로그 링크 이동하게 온클릭 걸어두기) */}
             <div className="aboutUs_fifthBanner">
-                <p className="bannerHeader" style={{textAlign:'left', paddingLeft:'50px'}}>어글리어스가 전하는 농산물 이야기</p>
+                <p className="bannerHeader" style={{textAlign:'left', paddingLeft:'150px', paddingBottom:'30px'}}>어글리어스가 전하는 농산물 이야기</p>
                     <Container>
                         <Row>
                             <Col>
-                                <Card className="text-white" style={{border:'1px solid none'}} >
+                                <Card className="text-white" style={{border:'1px solid none', marginRight:'10px'}} >
                                 <Card.Img src="https://images.unsplash.com/photo-1599403417231-8387b0a3b7ad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80" alt="다양한 감자 사진" />
                                 <Card.ImgOverlay style={{backgroundImage: 'linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1))'}}>
                                     <Card.Title>울퉁불퉁해도 맛있으니 괜찮아</Card.Title>
@@ -150,7 +146,7 @@ function AboutUs(){
                                 </Card>
                             </Col>
                             <Col>
-                            <Card className="text-white" style={{border:'1px solid none'}}>
+                            <Card className="text-white" style={{border:'1px solid none', marginLeft:'10px'}}>
                                 <Card.Img src="https://images.unsplash.com/photo-1627740281282-b8aad2a5c290?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="낙과(사과) 사진" />
                                 <Card.ImgOverlay style={{backgroundImage: 'linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.1))'}}>
                                     <Card.Title>조금 못생겨졌지만 맛있으니 괜찮아</Card.Title>
@@ -182,6 +178,30 @@ function AboutUs(){
     )
 }
 
+
+function ShowBanner(){
+    let [opaClass, setOpaClass] = useState('');
+
+    useEffect(()=>{
+        const timeout = setTimeout(()=>{
+            setOpaClass('aniTo');
+        },300); 
+            return()=>{
+                setOpaClass('');
+                clearTimeout(timeout);
+            }
+        },[])
+    
+
+    return(
+        <div className={opaClass}>
+            <div className='aboutUs_secondBannerText'>
+                    <p>지구를 위해, 우리를 위해</p>
+                    <p>우리는 못난이 채소들을 구출합니다.</p>
+            </div>
+        </div>
+    )
+}
 
 
 export default AboutUs;

@@ -437,7 +437,7 @@
 
 .aboutUs_fourthBanner{
   margin-bottom: 150px;
-  padding-top: 50px;
+  padding-top: 70px;
   /* padding-left:150px; */
   width: 100%;
   height: 500px;
@@ -448,7 +448,16 @@
 
 .aboutUs_fourthBanner .containerText{
   margin-top: 100px;
-  /* text-align: center; */
+  text-align: center;
+}
+
+.aboutUs_fourthBanner .containerTextTopic{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.aboutUs_fourthBanner .containerTextContent{
+  font-size: 26px;
 }
 
 .aboutUs_fifthBanner{

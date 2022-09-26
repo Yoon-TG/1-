@@ -14,8 +14,6 @@ import {Container,Row,Col, Card} from 'react-bootstrap';
 
 function AboutUs(){
 
-    // let [videoName, setVideoNames] = useState(['corn','rice','wheat','bean','carrot1','cucumber','tomato','carrot2']);
-
     return(
         <div>
             <div className="topBanner">
@@ -103,30 +101,32 @@ function AboutUs(){
 
             {/* 짤막한 배너 */}
             <div className="aboutUs_fourthBanner">
-                <p className="bannerHeader" style={{paddingLeft:'150px'}}>못난이 농산물 구출이 어떤 변화를 만들고 있을까요?</p>
+                <p className="bannerHeader" style={{textAlign:'center'}}>못난이 농산물 구출이 어떤 변화를 만들고 있을까요?</p>
                 {/* 애니메이션 추가 > 숫자 올라가도록 */}
                 <div className="containerText">
                 <Container>
                         <Row>
                             <Col>
-                                <p>구출한 농산물</p>
-                                <p>123143</p>
+                                <p className="containerTextTopic">구출한 농산물</p>
+                                <p className="containerTextContent">349,335kg+</p>
                             </Col>
                             <Col>
-                                <p>아낀 물의 양</p>
-                                <p>123123</p>
+                                <p className="containerTextTopic">아낀 물의 양</p>
+                                <p className="containerTextContent">7,057 <span>millionL</span></p>
                             </Col>
                             <Col>
-                                <p>아낀 플라스틱 수</p>
+                                <p className="containerTextTopic">아낀 플라스틱 수</p>
+                                <p className="containerTextContent">208,508</p>
                             </Col>
                             <Col>
-                                <p>절감한 탄소</p>
+                                <p className="containerTextTopic">절감한 탄소</p>
+                                <p className="containerTextContent">208,867 <span>kg</span></p>
                             </Col>
                         </Row>
                     </Container>
                     </div>
-                    <p style={{position:'relative', top:'150px', paddingLeft:'150px'}}>함께 못난이 농산물을 구출해나가며 지구를 위한 분명한 변화를 만들고 있습니다.</p>
-
+                    <p style={{position:'relative', top:'100px', textAlign:'center', color:'#EEF2E6'}}>함께 못난이 농산물을 구출해나가며 지구를 위한 분명한 변화를 만들고 있습니다.</p>
+                    {/* paddingLeft:'130px' */}
             </div>
 
             {/* 여기에 블로그 글 이동+더 보러가기(우선은 블로그 링크 이동하게 온클릭 걸어두기) */}
@@ -170,7 +170,7 @@ function AboutUs(){
             <div className="aboutUs_lastBanner">
                 <p className="bannerHeader" style={{textAlign:'center'}}>이런 곳과 함께하고 있어요!</p>
                 <div className="aboutUs_lastBannerImg">
-                    {/* 이미지 넣기 */}
+                    
                     
                 </div>
             </div>

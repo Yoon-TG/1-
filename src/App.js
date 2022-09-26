@@ -11,7 +11,6 @@ import Store from './components/store.js';
 function Main() {
 
   let navigate = useNavigate();
-  let navigate2 = useNavigate();
 
   return (
     <div>

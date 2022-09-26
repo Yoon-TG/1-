@@ -6,6 +6,9 @@ import MainPage from './components/main.js';
 import AboutUs from './components/aboutUs.js';
 import Manual from './components/manual.js';
 import Store from './components/store.js';
+import Review from './components/Review.js'
+import FAQ from './components/FAQ.js';
+import ManualMain from './components/ManualMain.js'
 
 
 function Main() {
@@ -22,7 +25,7 @@ function Main() {
             </Navbar.Brand>
             <Nav className="me-auto">
             <Nav.Link href="/aboutUs">소개</Nav.Link>
-            <Nav.Link href="/manual">이용방법</Nav.Link>
+            <Nav.Link href="/manual/">이용방법</Nav.Link>
             <Nav.Link href="/store">못난이 상점</Nav.Link>
             <Nav.Link className='cartImg' href='/main'>
               <img src={process.env.PUBLIC_URL+'/navImg/cart.png'}></img>
@@ -41,9 +44,9 @@ function Main() {
         <Route path='/main' element={<MainPage />} />
         <Route path='/aboutUs' element={<AboutUs />} />
         <Route path='/manual' element={<Manual />}>
-          {/* <Route path='/manual' element={<div>기본 이용 방법화면</div>}></Route>
-          <Route path='/manual/FAQ' element={<div style={{fontSize:'70px'}}>faq화면</div>}></Route>
-          <Route path='/review' element={<div>review 화면</div>}></Route> */}
+          <Route path='/manual' element={<ManualMain />} />
+          <Route path='/manual/FAQ' element={<FAQ />} />
+          <Route path='/manual/review' element={<Review />} />
         </Route>
         <Route path='/store' element={<Store />} />
       </Routes>
@@ -53,7 +56,7 @@ function Main() {
           alert('먼저 로그인하세요.')
         }}>문의하기</button>
         <button className='FAQButton' onClick={()=>{
-          navigate("/manual#FAQ")
+          navigate("/manual/FAQ")
         }}>자주 묻는 질문</button>
 
         <p>어글리어스 고객센터<span className='footerRightTxt'>02.1234.5678</span></p>

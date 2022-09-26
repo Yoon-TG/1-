@@ -420,7 +420,9 @@
 
 .aboutUs_thirdBanner{
   margin-bottom: 180px;
+  font-size: 16px;
   text-align: center;
+  word-break: keep-all;
 }
 
 .aboutUs_thirdBanner img{
@@ -431,7 +433,7 @@
 
 .aboutUs_thirdBanner .pHeader{
   margin-top: 20px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   font-size: 20px;
   font-weight: bold;
 }
@@ -462,7 +464,7 @@
 }
 
 .aboutUs_fifthBanner{
-  margin-bottom: 100px;
+  margin-bottom: 150px;
   width: 100%;
   overflow: hidden;
 }
@@ -472,7 +474,7 @@
 }
 
 .aboutUs_lastBannerImg{
-  margin-top: 50px;
+  margin-top: 30px;
   width: 100%;
   height: 200px;
   background-color: #5D5D5D;
@@ -514,8 +516,58 @@
 }
 
 .FAQQuestion{
-  margin-top: 100px;
+  margin-top: 120px;
   margin-bottom: 200px;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 150px;
+  padding-right: 150px;
+  word-break: keep-all;
+}
+
+.FAQQuestion input{
+  margin-top: 40px;
+  width: 70%;
+  height: 50px;
+  position: relative;
+  left: 100px;
+  border: 3px solid lightgray;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.inputButton{
+  margin-bottom: 80px;
+  color: white;
+  background-color: gray;
+  width: 100px;
+  height: 50px;
+  position: relative;
+  left: 50px;
+  border: 1px solid gray;
+  border-radius: 3px;
+}
+
+.QuestionNav{
+  margin-top: 20px;
+  margin-bottom: 50px;
+  width: 100%;
+  height: 60px;
+  background-color: #EEF2E6;
+  border: 1px solid #EEF2E6;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.QuestionNav button{
+  margin-right: 50px;
+  width: 100px;
+  background-color: #EEF2E6;
+  border: 1px solid #EEF2E6;
+  border-radius: 5px;
+}
+
+.QuestionNav button:hover{
+  height: 70%;
+  background-color: #3D8361;
 }

@@ -82,18 +82,25 @@ function AboutUs(){
                         <Col style={{marginRight:'20px'}}>
                             <img src="https://images.unsplash.com/photo-1570358934836-6802981e481e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"></img>
                             <p className="pHeader">환경을 생각합니다</p>
-                            <p>농산물이 폐기되며 발생하는 메탄 가스 등은 지구 온난화의 원인이 됩니다.
-                                농산물 구출은 이러한 메탄 가스의 발생을 줄이고, 추가적으로 발생하는 자원과 노동력 낭비 또한 줄입니다.
+                            <p>농산물이 폐기되며 발생하는 메탄 가스 등은<br />
+                            지구온난화의 원인이 됩니다.<br />
+                                농산물 구출은 이러한 메탄 가스의 발생을 줄이고, <br />
+                                추가적으로 발생하는 자원과 노동력 낭비 또한 줄입니다.
                             </p>
                         </Col>
                         <Col style={{marginRight:'20px'}}>
                             <img src={process.env.PUBLIC_URL+'/navImg/coll.jpg'}></img>
                             <p className="pHeader">불필요한 낭비를 막습니다</p>
-                            <p>농산물을 겉모습으로 판단하던 기존의 기준에서 벗어나, 신선함과 맛 등 본질에 집중하여 상품을 선별합니다. 못난이 농산물을 헐값에 사들이는 관행을 깨고, 합리적인 가격으로 정산하여 건강한 생산이 지속되도록 힘 씁니다. </p>
+                            <p>농산물을 겉모습으로 판단하던 기존의 기준에서 벗어나, <br />
+                            신선함과 맛 등 본질에 집중하여 상품을 선별합니다. <br />
+                            못난이 농산물을 헐값에 사들이는 관행을 깨고, 
+                            합리적인 가격으로 정산하여 건강한 생산이 지속되도록 힘씁니다. </p>
                         </Col> <Col>
                             <img src="https://images.unsplash.com/photo-1623428453655-44feea11454b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"></img>
                             <p className="pHeader">플라스틱 없는 포장</p>
-                            <p>농산물의 신선도를 지키는 선에서 최소한의 포장을 끊임없이 실험하고 실천합니다. 플라스틱을 지양하고, 종이백과 펄프용기를 사용합니다. 조금 번거롭더라도 우리의 땅과 식탁에 이로운 방향을 선택합니다.</p>
+                            <p>농산물의 신선도를 지키는 선에서 <br />최소한의 포장을 끊임없이 실험하고 실천합니다. 
+                                플라스틱을 지양하고, 종이백과 펄프용기를 사용합니다. <br />
+                                조금 번거롭더라도, 우리의 땅과 식탁에 <br />이로운 방향을 선택합니다.</p>
                         </Col>
                     </Row>
                 </Container>

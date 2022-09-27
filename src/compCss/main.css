@@ -4,6 +4,8 @@
 }
 
 .FirstBanner {
+    padding-top: 170px;
+    padding-left: 200px;
     width: 100%;
     height: 650px;
     background-image: url('https://ik.imagekit.io/uhpparxr6/main/main-header/main-header-d-pc.png');
@@ -13,9 +15,9 @@
 }
 
 .FirstBanner p {
-    position: relative;
+    /* position: relative;
     left: 200px;
-    top: 170px;
+    top: 170px; */
     font-weight: bold;
     font-size: 24px;
     line-height: 15px;
@@ -144,14 +146,9 @@
 }
 
 .fourthBanner {
-    margin: 70px 0px 130px 0px;
-    text-align: center;
-}
-
-.fourthBanner p {
+    margin: 70px 50px 130px 50px;
+    padding-left: 150px;
     text-align: left;
-    position: relative;
-    left: 175px;
 }
 
 .fourthBanner img {
@@ -179,19 +176,20 @@
     left: 730px;
 }
 
-.fifthBannerText1>.fifthBannerCircle,
+/* .fifthBannerText1>.fifthBannerCircle,
 .fifthBannerText2,
 .fifthBannerText3 {
     cursor: pointer;
-}
+} => 선택자 추가하기*/
 
 .fifthBannerCircle {
     width: 40px;
     height: 40px;
     background-color: #FFEDDF;
     border-radius: 70%;
-    position: relative;
-    top: 40px;
+    position: absolute;
+    /* position: relative;
+    top: 40px; */
     z-index: 1;
 }
 
@@ -225,8 +223,6 @@
     padding-top: 20px;
     padding-left: 175px;
     height: 400px;
-    /* position: relative;
-    left:175px; */
 }
 
 .sixthBannerImg img {
@@ -236,14 +232,12 @@
 }
 
 .sixthBanner p {
-    position: relative;
-    top: 5px;
-    left: 50px
+    padding-left: 550px;
 }
 
 .sixthBannerMain {
     position: relative;
-    top: 170px;
+    top: 180px;
 }
 
 .seventhBanner {

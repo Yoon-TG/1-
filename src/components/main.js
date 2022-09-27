@@ -33,9 +33,9 @@ function MainPage(){
             </p>
           </div>
           
-          {/* <div className='aniImg'>
+          <div className='aniImg'>
             <img src="https://ik.imagekit.io/uhpparxr6/pc_review_thumb-2_PxTishY16.png?ik-sdk-version=react-1.1.1" />
-          </div> */}
+          </div>
           
           <button className='secondBannerButton' disabled onClick={()=>{
             navigate("/Manual/review")
@@ -106,7 +106,7 @@ function MainPage(){
           <div className='sixthBannerImg'>
             <img src='https://ik.imagekit.io/uhpparxr6/main/main-vegetables-pc_Nel5vcXXo.png?ik-sdk-version=javascript-1.4.3&updatedAt=1659941827894&ik-sdk-version=react-1.1.1' />
           </div>
-            <p style={{color:'#707070', lineHeight:'0px', position:'relative', top:'10px'}}>이렇게 보내드려요</p>
+            <p style={{color:'#707070', lineHeight:'0px', marginBottom:'30px', position:'relative', top:'10px'}}>이렇게 보내드려요</p>
             <p className='bannerHeader'>가장 신선한 제철 채소를<br/>
             소량씩 즐겨요
             </p>

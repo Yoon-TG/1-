@@ -26,10 +26,14 @@ function Main() {
             <Nav.Link href="/aboutUs">소개</Nav.Link>
             <Nav.Link href="/manual/">이용방법</Nav.Link>
             <Nav.Link href="/store">못난이 상점</Nav.Link>
-            <Nav.Link className='cartImg' href='/main'>
+            <Nav.Link className='cartImg' onClick={()=>{
+              alert("먼저 로그인하세요!")
+            }}>
               <img src={process.env.PUBLIC_URL+'/navImg/cart.png'}></img>
             </Nav.Link>
-            <Nav.Link className='personImg' href="/aboutUs">
+            <Nav.Link className='personImg' onClick={()=>{
+              alert("먼저 로그인하세요!")
+            }}>
               <img src={process.env.PUBLIC_URL+'/navImg/person.png'}></img>
             </Nav.Link>
           </Nav>

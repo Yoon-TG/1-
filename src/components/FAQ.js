@@ -1,3 +1,5 @@
+import '../compCss/manual.css'
+
 import Accordion from 'react-bootstrap/Accordion';
 import { useState } from 'react';
 

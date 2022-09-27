@@ -1,44 +1,45 @@
 import {Container, Navbar, Nav} from 'react-bootstrap';
 import {useNavigate, Routes, Route} from 'react-router-dom';
-import Main from '../App';
+import '../compCss/main.css';
 
 function MainPage(){
   let navigate = useNavigate();
 
     return(
-        <div>
+      <div>
         <div className='FirstBanner'>
-          <span>
           <p>못생겨도 맛있다</p>
           <p>친환경 못난이 채소박스</p>
-          <p className='under'>조금씩 다양하게, 불필요한 낭비없이</p>
+          <p className='under' style={{fontWeight:'100', fontSize:'15px', color:'#707070'}}>조금씩 다양하게, 불필요한 낭비없이</p>
           <button onClick={()=>{
             navigate("/Manual")
           }}>시작하기</button>
-          </span>
         </div>
 
-        <div className='secondBanner' >  
-          <div className='secondBannerImg'>          
-            <img style={{width: 'auto', height:'130px'}} src='https://ik.imagekit.io/uhpparxr6/main/main_vp/main_vp_pc_cBSZrC968.png?ik-sdk-version=javascript-1.4.3&updatedAt=1655786748538&ik-sdk-version=react-1.1.1'></img>
-          </div>
-          <div>
-            <span className='leftText'>이렇게 많은 분들이</span>
-            <span className='rightText'>전체 만족도&nbsp; &nbsp;</span>
-            <span className='rightText'>&nbsp;전체 리뷰 수</span>
-            <br />
-            <span className='leftText'>지속 가능한 식탁을 만들고 있어요!</span>
-            <span className='rightTextNum'>4.8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-            <span className='rightTextNum'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7257</span>
-            <div className='blankSmall'></div>
-          </div>
 
+        <div className='firSecBetweenBanner'>          
+            <img style={{width: 'auto', height:'130px'}} src='https://ik.imagekit.io/uhpparxr6/main/main_vp/main_vp_pc_cBSZrC968.png?ik-sdk-version=javascript-1.4.3&updatedAt=1655786748538&ik-sdk-version=react-1.1.1'></img>
+        </div>
+        
+        <div className='secondBanner' > 
+          <div className='secondBannerText'>
+            <p className='leftText'>이렇게 많은 분들이
+              <span className='rightText'>전체 만족도&nbsp; &nbsp; </span>
+              <span className='rightText'>&nbsp;전체 리뷰 수</span>
+              </p>
+            <p className='leftText'>지속 가능한 식탁을 만들고 있어요!
+              <span className='rightTextNum1'>4.8</span>
+              <span className='rightTextNum2'>7257</span>
+            </p>
+          </div>
+          
           {/* <div className='aniImg'>
             <img src="https://ik.imagekit.io/uhpparxr6/pc_review_thumb-2_PxTishY16.png?ik-sdk-version=react-1.1.1" />
           </div> */}
-          <button className='secondBannerButton' onClick={()=>{
-            navigate("/Manual#review")
-          }}>모든 리뷰 보기&nbsp;&nbsp;&nbsp;→</button>
+          
+          <button className='secondBannerButton' disabled onClick={()=>{
+            navigate("/Manual/review")
+          }}>모든 리뷰 보기 &nbsp;→</button>
         </div>
 
         <div className='thirdBanner'>
@@ -50,53 +51,62 @@ function MainPage(){
           <p className='bannerHeader'>이들이 못난이가 된 사연</p>
           <img src='https://ik.imagekit.io/uhpparxr6/pc_vegetable_stories_type_B_ml8MCK4Oj.png?ik-sdk-version=javascript-1.4.3&updatedAt=1655081841582&ik-sdk-version=react-1.1.1'></img>
         </div>
-  
-        <div className='fifthBanner'>
-          <div className='fifthBannerImg' /> 
-            <p>이렇게 해결해요</p>
-            <p className='bannerHeader'>생산자와 소비자, 환경에도<br/>
-            더 이로운 방식으로
+
+
+          {/* 연습~~ */}
+
+          <div className='fifthBanner'>
+            <div className='fifthBannerImg'>
+              <img src="https://ik.imagekit.io/uhpparxr6/main-solution1.png?ik-sdk-version=react-1.1.1"></img>
+              <img src=""></img>
+              <img src=""></img>
+            </div>
+            <p style={{color:'#707070', lineHeight:'0px', position:'relative', top:'5px' }}>이렇게 해결해요</p>
+            <p className='bannerHeader'>
+              생산자와 소비자, 환경에도<br/>
+              더 이로운 방식으로
             </p>
-            <div className='fifthBannerMain'>
-              <div>
-                <p>
+
+              <div className='fifthBannerText1'>
+                <div className='fifthBannerCircle'></div>
+                <p className='fifthBannerTopic'>
+                  <span className='circleNum'>1</span>
+                  수확 직후 직매입</p>
+                <p className='fifthBannerCon'>판로를 찾지 못한 농산물들을<br/>
+                  농부님께 수확 2~7일 이내 직접 공급받아요.</p>        
+              </div> 
+
+              <div className='fifthBannerText2'>
                   <div className='fifthBannerCircle'></div>
-                  <span style={{fontWeight:'bold', fontSize:'24px', position:'relative', left:'10px'}}>1</span>
-                  <span style={{fontWeight:'bold', position:'relative', left:'45px', marginBottom:'40px'}}>수확 직후 직매입</span><br/>
-                  <span style={{position:'relative', left:'60px'}}>판로를 찾지 못한 농산물들을<br/>
-                  농부님께 수확 2~7일 이내 직접 공급받아요.</span>
-                </p>
-                
+                <p className='fifthBannerTopic'>
+                  <span className='circleNum'>2</span>
+                  조금씩 다양하게 소포장</p>
+                <p className='fifthBannerCon'>
+                가구 수에 맞게 소량으로 포장해요.
+                  </p>        
               </div>
-              <div>
-                <p>
+
+              <div className='fifthBannerText3'>
                   <div className='fifthBannerCircle'></div>
-                  <span style={{fontWeight:'bold', fontSize:'24px', position:'relative', left:'10px'}}>2</span>
-                  <span style={{fontWeight:'bold', position:'relative', left:'45px', marginBottom:'40px'}}>조금씩 다양하게 소포장</span><br/>
-                  <span style={{position:'relative', left:'60px'}}>
-                  가구 수에 맞게 소량으로 포장해요.</span>
-                </p>
-              </div>
-              <div>
-                  <div className='fifthBannerCircle'></div>
-                  <span style={{fontWeight:'bold', fontSize:'24px', position:'relative', left:'10px'}}>3</span>
-                  <span style={{fontWeight:'bold', position:'relative', left:'45px', marginBottom:'40px'}}>집 앞까지 정기배송</span><br/>
-                  <span style={{position:'relative', left:'60px'}}>
-                  중간 유통 절차없이 즉시 보내드려요.</span>
-              </div>
-              <br />
-              <p style={{position:'relative', left:'500px', color:'#EB6440', cursor:'pointer'}} onClick={()=>{
+                <p className='fifthBannerTopic'>
+                  <span className='circleNum'>3</span>
+                  집 앞까지 정기배송</p>
+                <p className='fifthBannerCon'>
+                  중간 유통 절차없이 즉시 보내드려요.
+                </p>     
+              </div>   
+            
+              <p style={{position:'relative', top:'0px', left:'420px',textAlign:'left', color:'#EB6440', cursor:'pointer'}} onClick={()=>{
                 navigate("/manual");
               }}>구독 신청하기&gt;</p>
-            </div>
-            <div className='blankBig'/>
         </div>
+
 
         <div className='sixthBanner'>
           <div className='sixthBannerImg'>
             <img src='https://ik.imagekit.io/uhpparxr6/main/main-vegetables-pc_Nel5vcXXo.png?ik-sdk-version=javascript-1.4.3&updatedAt=1659941827894&ik-sdk-version=react-1.1.1' />
           </div>
-            <p>이렇게 보내드려요</p>
+            <p style={{color:'#707070', lineHeight:'0px', position:'relative', top:'10px'}}>이렇게 보내드려요</p>
             <p className='bannerHeader'>가장 신선한 제철 채소를<br/>
             소량씩 즐겨요
             </p>
@@ -136,38 +146,22 @@ function MainPage(){
 
       <div className='lastBanner'>
         <p>미션</p>
-        <p className='bannerHeader'>지속가능한 식탁을 만듭니다.</p>
+        <p className='bannerHeader'>지속 가능한 식탁을 만듭니다.</p>
         <p>
           농산물의 폐기 문제는 지구 온난화의 원인이 되고 물과 비료, 노동 에너지의 낭비로 이어집니다.<br/>
           농산물들의 제 가치를 찾아, 음식물 폐기는 줄이고 친환경 땅을 늘림으로써<br/>
           소비자의 건강한 식탁과 미래를 위한 환경이 지속가능하게 합니다.
         </p>
-        <p style={{cursor:'pointer'}} onClick={()=>{
+        <a href='/aboutUs' style={{textDecoration:'none', color:'white', fontWeight:'normal'}}>더 알아보기 &gt;</a>
+        {/* <p style={{cursor:'pointer'}} onClick={()=>{
           navigate("/aboutUs")
-        }}>더 알아보기&gt;</p>
-        <br/>
-        &nbsp;
-        <p className='bannerHeader' style={{wordSpacing:'45px'}}>339,664kg+ 259 208,508개</p>
-        <p >&nbsp;구출한 농산물 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;함께 하는 농가  &nbsp; &nbsp; &nbsp;아낀 플라스틱</p>
-
-      </div>
-
-      {/* <div className='footer'>
-        <button className='askButton' onClick={()=>{
-          alert('먼저 로그인하세요.')
-        }}>문의하기</button>
-        <button className='FAQButton' onClick={()=>{
-          navigate("/manual#FAQ")
-        }}>자주 묻는 질문</button>
-
-        <p>어글리어스 고객센터<span className='footerRightTxt'>02.1234.5678</span></p>
+        }}>더 알아보기&gt;</p> */}
         
-        <p>월-목요일 <span className='footerRightTxt'>11:00 ~ 18:00 (점심시간 12:00 ~ 13:00)</span></p>
-        <p>금요일        <span className='footerRightTxt'>09:00 ~ 18:00 (점심시간 12:00 ~ 13:00)</span></p>
-        <p>토·일·공휴일 <span className='footerRightTxt'>휴무</span></p>
-        </div> */}
+        <p className='bannerHeader' style={{wordSpacing:'45px', marginTop:'70px'}}>339,664kg+ 259 208,508개</p>
+        <p >&nbsp;구출한 농산물 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;함께 하는 농가  &nbsp; &nbsp; &nbsp;아낀 플라스틱</p>
       </div>
-    )
+    </div>
+  )
 }
 
 export default MainPage;

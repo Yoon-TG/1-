@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import {Container, Navbar, Nav} from 'react-bootstrap';
 import {Routes, Route, useNavigate} from 'react-router-dom';
@@ -39,7 +38,7 @@ function Main() {
       </div>  
 
       <Routes>
-        <Route path='*' element={<div style={{textAlign:'center', position:'relative', top:'100px',fontSize:'40px'}}> 이런! 잘못된 경로입니다.</div>} />
+        <Route path='*' element={<div style={{width:'auto', height:'300px', textAlign:'center', position:'relative', top:'100px',fontSize:'40px'}}> 이런! 잘못된 경로입니다.</div>} />
         <Route path='/' element={<MainPage />} />
         <Route path='/main' element={<MainPage />} />
         <Route path='/aboutUs' element={<AboutUs />} />

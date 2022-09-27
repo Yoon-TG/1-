@@ -1,0 +1,285 @@
+.bannerHeader {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.FirstBanner {
+    width: 100%;
+    height: 650px;
+    background-image: url('https://ik.imagekit.io/uhpparxr6/main/main-header/main-header-d-pc.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.FirstBanner p {
+    position: relative;
+    left: 200px;
+    top: 170px;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 15px;
+}
+
+.FirstBanner button {
+    margin-top: 0px;
+    position: absolute;
+    left: 200px;
+    top: 260px;
+    width: 160px;
+    height: 50px;
+    background-color: #FF6741;
+    border: 1px #FF6741;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.firSecBetweenBanner {
+    margin: 70px 0px 70px 0px;
+    width: auto;
+    text-align: center;
+}
+
+.secondBanner {
+    margin-top: 100px;
+    width: 100%;
+}
+
+.secondBanner .secondBannerText {
+    margin-bottom: 50px;
+    padding-left: 150px;
+    padding-right: 150px;
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.secondBanner .leftText {
+    text-align: left;
+    line-height: 20px;
+}
+
+.secondBanner .rightText {
+    font-size: 22px;
+    color: #707070;
+    text-align: right;
+    position: relative;
+    left: 550px;
+}
+
+.secondBanner .rightTextNum1 {
+    font-size: 24px;
+    color: #EB6440;
+    text-align: right;
+    position: relative;
+    left: 395px;
+}
+
+.secondBanner .rightTextNum2 {
+    font-size: 24px;
+    color: #EB6440;
+    text-align: right;
+    position: relative;
+    left: 490px;
+}
+
+.aniImg {
+    width: 100%;
+    height: 400px;
+    /* position: relative; */
+    overflow-x: hidden;
+}
+
+.aniImg img {
+    width: auto;
+    height: 400px;
+    display: flex;
+    flex-wrap: nowrap;
+    animation: bannermove 30s linear infinite;
+    overflow-x: hidden;
+}
+
+@keyframes bannermove {
+    0% {
+        /* background-position: 0 center; */
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(-50%, 0);
+        /* background-position: -1124px center; */
+    }
+}
+
+.secondBannerButton {
+    margin: 70px 600px 70px 600px;
+    width: 160px;
+    height: 50px;
+    background-color: #979CA6;
+    border: 1px #979CA6;
+    border-radius: 2px;
+    color: white;
+}
+
+.thirdBanner {
+    margin: 70px 0px 130px 0px;
+    width: 100%;
+    height: 450px;
+    background-color: #B78E68;
+}
+
+.thirdBanner .leftImg {
+    width: 750px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.thirdBanner .rightImg {
+    width: 270px;
+    height: 300px;
+    position: relative;
+    top: -20px;
+    left: 200px;
+}
+
+.fourthBanner {
+    margin: 70px 0px 130px 0px;
+    text-align: center;
+}
+
+.fourthBanner p {
+    text-align: left;
+    position: relative;
+    left: 175px;
+}
+
+.fourthBanner img {
+    width: auto;
+    height: 500px;
+}
+
+/* 연습~~ */
+
+.fifthBanner {
+    margin: 130px 0px 130px 0px;
+    padding-left: 180px;
+    padding-right: 140px;
+    text-align: left;
+}
+
+.fifthBannerImg img {
+    width: 500px;
+    height: 530px;
+    /* background-image: url('https://ik.imagekit.io/uhpparxr6/main-solution1.png?ik-sdk-version=react-1.1.1');
+    background-repeat: no-repeat;
+    background-size: contain; */
+    /* float: right; */
+    position: absolute;
+    left: 730px;
+}
+
+.fifthBannerText1>.fifthBannerCircle,
+.fifthBannerText2,
+.fifthBannerText3 {
+    cursor: pointer;
+}
+
+.fifthBannerCircle {
+    width: 40px;
+    height: 40px;
+    background-color: #FFEDDF;
+    border-radius: 70%;
+    position: relative;
+    top: 40px;
+    z-index: 1;
+}
+
+.fifthBannerTopic {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 30px;
+    position: relative;
+    top: 3px;
+    left: 50px;
+}
+
+.circleNum {
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    top: 2px;
+    left: -36px;
+    z-index: 2;
+}
+
+
+.fifthBannerCon {
+    font-size: 16px;
+    position: relative;
+    left: 60px;
+}
+
+.sixthBanner {
+    margin: 130px 0px 130px 0px;
+    padding-top: 20px;
+    padding-left: 175px;
+    height: 400px;
+    /* position: relative;
+    left:175px; */
+}
+
+.sixthBannerImg img {
+    width: 500px;
+    height: 410px;
+    float: left;
+}
+
+.sixthBanner p {
+    position: relative;
+    top: 5px;
+    left: 50px
+}
+
+.sixthBannerMain {
+    position: relative;
+    top: 170px;
+}
+
+.seventhBanner {
+    margin: 70px 0px 70px 0px;
+    padding-top: 30px;
+    padding-left: 175px;
+}
+
+.seventhBanner img {
+    width: auto;
+    height: 250px;
+}
+
+.seventhBannerButtonBox {
+    margin: 70px 0px 70px 0px;
+    text-align: center;
+}
+
+.seventhBannerButton {
+    width: 450px;
+    height: 50px;
+    background-color: #EB6440;
+    color: white;
+    border: #EB6440;
+    border-radius: 3px;
+}
+
+.lastBanner {
+    margin-top: 100px;
+    padding: 70px 250px 70px 250px;
+    width: 100%;
+    height: 550px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1461354464878-ad92f492a5a0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: #E4E4E4;
+}

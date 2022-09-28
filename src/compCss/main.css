@@ -90,26 +90,52 @@
     width: 100%;
     height: 400px;
     /* position: relative; */
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
-.aniImg img {
+.aniImg #img1{
     width: auto;
     height: 400px;
     display: flex;
     flex-wrap: nowrap;
-    animation: bannermove 30s linear infinite;
-    overflow-x: hidden;
+    animation: bannermove 20s linear infinite;
 }
 
 @keyframes bannermove {
     0% {
         /* background-position: 0 center; */
+        transform: translate(101%, 0);
+    }
+
+    100% {
+        transform: translate(0%, 0);
+        /* background-position: -1124px center; */
+    }
+}
+
+.aniImg #img2{
+    width: auto;
+    height: 400px;
+    position: relative;
+    top: -400px;
+    display: flex;
+    flex-wrap: nowrap;
+    /* position: absolute;
+    top: 1058px;
+    display: flex;
+    flex-wrap: nowrap; */
+    animation: bannermove2 20s linear infinite;
+}
+
+@keyframes bannermove2 {
+    0% {
+        
+        /* background-position: 0 center; */
         transform: translate(0, 0);
     }
 
     100% {
-        transform: translate(-50%, 0);
+        transform: translate(-100.3%, 0);
         /* background-position: -1124px center; */
     }
 }

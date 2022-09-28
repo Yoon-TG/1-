@@ -44,7 +44,8 @@ function MainPage(){
           </div>
           
           <div className='aniImg'>
-            <img src="https://ik.imagekit.io/uhpparxr6/pc_review_thumb-2_PxTishY16.png?ik-sdk-version=react-1.1.1" />
+            <img id='img1' src="https://ik.imagekit.io/uhpparxr6/pc_review_thumb-2_PxTishY16.png?ik-sdk-version=react-1.1.1" />
+            <img id='img2' style={{overflowY:'hidden'}} src="https://ik.imagekit.io/uhpparxr6/pc_review_thumb-2_PxTishY16.png?ik-sdk-version=react-1.1.1" />
           </div>
           
           <button className='secondBannerButton' disabled onClick={()=>{

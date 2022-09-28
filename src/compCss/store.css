@@ -1,21 +1,7 @@
-@font-face {
-    font-family: 'Pretendard-Regular';
-    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
-}
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Pretendard-Regular';
-}
-
 .storeNav{
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     padding-top: 60px;
-    padding-left: 50px;
+    padding-left: 150px;
     width: 100%;
     height: 120px;
     background-color: aliceblue;
@@ -31,7 +17,56 @@
 }
 
 .storeBanner{
+    margin-bottom: 150px;
     width: 100%;
-    height: 400px;
+    height: 500px;
     background-color: #707070;
+}
+
+.storeBanner img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    /* background-image: linear-gradient(-90deg,black,black); */
+}
+
+.storeMenu{
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-bottom: 70px;
+}
+
+.menu1{
+    margin-bottom: 100px;
+    padding-bottom: 30px;
+    border-top: 7px solid lightgray;
+    border-bottom: 7px solid lightgray ;
+    text-align: center;
+}
+
+.menu1 span, .menu2 span{
+    font-size: 18px;
+    color: #707070;
+}
+
+.menu1 p, .menu2 p{
+    text-align: left;
+    font-size: 20px;
+}
+
+#menuHeader{
+    margin: 10px 5px 50px 5px;
+    font-size: 26px;
+    font-weight: bold;
+    text-align: left;
+}
+
+#percent{
+    color:#EB6440; 
+}
+
+.menu2{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-align: center;
 }

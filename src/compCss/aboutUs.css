@@ -28,7 +28,7 @@
 
 .topBanner video {
     width: 100%;
-    -webkit-filter: brightness(60%);
+    -webkit-filter: brightness(50%);
 }
 
 .topBannerText {

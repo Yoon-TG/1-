@@ -103,13 +103,11 @@
 
 @keyframes bannermove {
     0% {
-        /* background-position: 0 center; */
         transform: translate(101%, 0);
     }
 
     100% {
         transform: translate(0%, 0);
-        /* background-position: -1124px center; */
     }
 }
 
@@ -129,14 +127,11 @@
 
 @keyframes bannermove2 {
     0% {
-        
-        /* background-position: 0 center; */
         transform: translate(0, 0);
     }
 
     100% {
         transform: translate(-100.3%, 0);
-        /* background-position: -1124px center; */
     }
 }
 

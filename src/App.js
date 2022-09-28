@@ -5,10 +5,10 @@ import MainPage from './components/main.js';
 import AboutUs from './components/aboutUs.js';
 import Manual from './components/manual.js';
 import Store from './components/store.js';
-import Review from './components/Review.js'
+import Review from './components/Review.js';
 import FAQ from './components/FAQ.js';
-import ManualMain from './components/ManualMain.js'
-
+import ManualMain from './components/ManualMain.js';
+import Login from './components/login.js';
 
 function Main() {
 
@@ -32,7 +32,8 @@ function Main() {
               <img src={process.env.PUBLIC_URL+'/navImg/cart.png'}></img>
             </Nav.Link>
             <Nav.Link className='personImg' onClick={()=>{
-              alert("먼저 로그인하세요!")
+              alert("먼저 로그인하세요!");
+              navigate('/login');
             }}>
               <img src={process.env.PUBLIC_URL+'/navImg/person.png'}></img>
             </Nav.Link>
@@ -52,6 +53,7 @@ function Main() {
           <Route path='/manual/review' element={<Review />} />
         </Route>
         <Route path='/store' element={<Store />} />
+        <Route path='/login' element={<Login />} />
       </Routes>
 
       <div className='footer'>

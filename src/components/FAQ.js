@@ -5,11 +5,11 @@ import { useState } from 'react';
 
 function FAQ(){
 
-    let[showSub, setShowSub] = useState(false);
-    let[showRec, setShowRec] = useState(false);
-    let[showInfo, setShowInfo] = useState(false);
-    let[showPay, setShowPay] = useState(false);
-    let[showDel, setShowDel] = useState(false);
+    let[showSub, setShowSub] = useState(true);
+    let[showRec, setShowRec] = useState(true);
+    let[showInfo, setShowInfo] = useState(true);
+    let[showPay, setShowPay] = useState(true);
+    let[showDel, setShowDel] = useState(true);
 
 
     let [sub, setSub] = useState([

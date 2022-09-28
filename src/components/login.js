@@ -11,7 +11,9 @@ function Login(){
     <div>
         <div className='loginCon'>
         <p className='bannerHeader'>로그인·회원가입</p>
-        <div className='kakaoLog' />
+        <div className='kakaoLog' onClick={()=>{
+            <a href="https://accounts.kakao.com/login/?continue=https%3A%2F%2Fkauth.kakao.com%2Foauth%2Fauthorize%3Fresponse_type%3Dcode%26redirect_uri%3Dhttps%253A%252F%252Fuglyus.co.kr%252Flogin%252Fkakao%252Fcallback%26state%3D%252Fmain%26through_account%3Dtrue%26client_id%3D06e56dda757545d5dd6bd11300c03f5c" />
+        }} />
         <p onClick={()=>{
             setShowLog(!showLog)
         }}  aria-controls="example-collapse-text"

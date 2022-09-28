@@ -160,27 +160,22 @@
 
 .fifthBanner {
     margin: 130px 0px 130px 0px;
-    padding-left: 180px;
+    padding-left: 200px;
     padding-right: 140px;
     text-align: left;
 }
 
 .fifthBannerImg img {
-    width: 500px;
-    height: 530px;
-    /* background-image: url('https://ik.imagekit.io/uhpparxr6/main-solution1.png?ik-sdk-version=react-1.1.1');
-    background-repeat: no-repeat;
-    background-size: contain; */
-    /* float: right; */
+    width: 450px;
+    height: 480px;
     position: absolute;
-    left: 730px;
+    left: 700px;
 }
 
-/* .fifthBannerText1>.fifthBannerCircle,
-.fifthBannerText2,
-.fifthBannerText3 {
-    cursor: pointer;
-} => 선택자 추가하기*/
+.fifthBannerText1, .fifthBannerText2, .fifthBannerText3{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
 
 .fifthBannerCircle {
     width: 40px;
@@ -193,7 +188,7 @@
     z-index: 1;
 }
 
-.fifthBannerTopic {
+.fifthBannerTopic1, .fifthBannerTopic2, .fifthBannerTopic3 {
     font-size: 18px;
     font-weight: bold;
     line-height: 30px;
@@ -201,6 +196,16 @@
     top: 3px;
     left: 50px;
 }
+
+.fifthBannerTopic1:hover, .fifthBannerTopic2:hover, .fifthBannerTopic3:hover {
+    color: #EB6440;
+    
+}
+/* 
+.fifthBannerTopic span{
+    cursor: pointer;
+} */
+
 
 .circleNum {
     font-size: 24px;

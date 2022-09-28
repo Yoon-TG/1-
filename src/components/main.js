@@ -1,9 +1,19 @@
+import { useState } from 'react';
 import {Container, Navbar, Nav} from 'react-bootstrap';
 import {useNavigate, Routes, Route} from 'react-router-dom';
 import '../compCss/main.css';
 
 function MainPage(){
   let navigate = useNavigate();
+
+  
+
+  const colorCh1 = document.querySelector(".fifthBannerText1 .fifthBannerTopic");
+  const colorCh2 = document.querySelector(".fifthBannerText2 .fifthBannerTopic");
+  const colorCh3 = document.querySelector(".fifthBannerText3 .fifthBannerTopic");
+
+
+
 
     return(
       <div>
@@ -65,22 +75,22 @@ function MainPage(){
             <p className='bannerHeader'>
               생산자와 소비자, 환경에도<br/>
               더 이로운 방식으로
-            </p>
+            </p> 
 
               <div className='fifthBannerText1'>
                 <div className='fifthBannerCircle'></div>
-                <p className='fifthBannerTopic'>
+                <p className='fifthBannerTopic1'>
                   <span className='circleNum'>1</span>
-                  수확 직후 직매입</p>
+                  <span>수확 직후 직매입</span></p>
                 <p className='fifthBannerCon'>판로를 찾지 못한 농산물들을<br/>
                   농부님께 수확 2~7일 이내 직접 공급받아요.</p>        
               </div> 
 
               <div className='fifthBannerText2'>
                   <div className='fifthBannerCircle'></div>
-                <p className='fifthBannerTopic'>
+                <p className='fifthBannerTopic2'>
                   <span className='circleNum'>2</span>
-                  조금씩 다양하게 소포장</p>
+                  <span>조금씩 다양하게 소포장</span></p>
                 <p className='fifthBannerCon'>
                 가구 수에 맞게 소량으로 포장해요.
                   </p>        
@@ -88,17 +98,17 @@ function MainPage(){
 
               <div className='fifthBannerText3'>
                   <div className='fifthBannerCircle'></div>
-                <p className='fifthBannerTopic'>
+                <p className='fifthBannerTopic3'>
                   <span className='circleNum'>3</span>
-                  집 앞까지 정기배송</p>
+                  <span>집 앞까지 정기배송</span></p>
                 <p className='fifthBannerCon'>
                   중간 유통 절차없이 즉시 보내드려요.
                 </p>     
               </div>   
             
-              <p style={{position:'relative', top:'0px', left:'420px',textAlign:'left', color:'#EB6440', cursor:'pointer'}} onClick={()=>{
+              <span style={{position:'relative', top:'0px',left:'350px', textAlign:'left', color:'#EB6440', cursor:'pointer'}} onClick={()=>{
                 navigate("/manual");
-              }}>구독 신청하기&gt;</p>
+              }}>구독 신청하기&gt;</span>
         </div>
 
 

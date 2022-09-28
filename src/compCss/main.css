@@ -199,7 +199,7 @@
 
 .fifthBannerTopic1:hover, .fifthBannerTopic2:hover, .fifthBannerTopic3:hover {
     color: #EB6440;
-    
+
 }
 /* 
 .fifthBannerTopic span{
@@ -281,4 +281,9 @@
     background-position: center;
     position: relative;
     color: #E4E4E4;
+}
+
+.lastBanner span{
+    margin-left: 70px;
+    margin-right: -28px;
 }

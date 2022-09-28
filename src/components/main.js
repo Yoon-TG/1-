@@ -167,8 +167,8 @@ function MainPage(){
           navigate("/aboutUs")
         }}>더 알아보기&gt;</p> */}
         
-        <p className='bannerHeader' style={{wordSpacing:'45px', marginTop:'70px'}}>339,664kg+ 259 208,508개</p>
-        <p >&nbsp;구출한 농산물 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;함께 하는 농가  &nbsp; &nbsp; &nbsp;아낀 플라스틱</p>
+        <p className='bannerHeader' style={{wordSpacing:'50px', marginTop:'70px'}}>339,664kg+ 259 208,508개</p>
+        <p > 구출한 농산물 <span>함께 하는 농가</span>  <span>아낀 플라스틱</span></p>
       </div>
     </div>
   )

@@ -28,6 +28,7 @@ function Main() {
             <Nav.Link href="/store">못난이 상점</Nav.Link>
             <Nav.Link className='cartImg' onClick={()=>{
               alert("먼저 로그인하세요!")
+              navigate('/login');
             }}>
               <img src={process.env.PUBLIC_URL+'/navImg/cart.png'}></img>
             </Nav.Link>
@@ -57,12 +58,14 @@ function Main() {
       </Routes>
 
       <div className='footer'>
-        <button className='askButton' onClick={()=>{
-          alert('먼저 로그인하세요.')
-        }}>문의하기</button>
-        <button className='FAQButton' onClick={()=>{
-          navigate("/manual/FAQ")
-        }}>자주 묻는 질문</button>
+        <a href='/login'>
+          <button className='askButton' onClick={()=>{
+            alert('먼저 로그인하세요.');
+          }}>문의하기</button>
+        </a>
+        <a href='/manual/FAQ'>
+          <button className='FAQButton'>자주 묻는 질문</button>
+        </a>
 
         <p>어글리어스 고객센터<span className='footerRightTxt'>02.1234.5678</span></p>
         

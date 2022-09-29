@@ -179,19 +179,19 @@ function AboutUs(){
             <div className='aboutUs_sixthBanner'>
                 <p className='bannerHeader'>언론보도</p>
                 <div className='aboutUs_article' >
-                    <p onClick={()=>{
+                    <p><span onClick={()=>{
                         window.open("https://www.khan.co.kr/national/national-general/article/202112281011001/?utm_source=twitter&utm_medium=social_share");
-                    }}>"마트엔 왜 구부러진 가지가 없을까" 어글리어스를 만든 이 질문 </p>
+                    }}>"마트엔 왜 구부러진 가지가 없을까" 어글리어스를 만든 이 질문</span> </p>
                 </div>
                 <div className='aboutUs_article' >
-                    <p onClick={()=>{
+                    <p><span onClick={()=>{
                         window.open("http://www.greenpostkorea.co.kr/news/articleView.html?idxno=200097");
-                    }}>[슬기로운 환경생활] 못생긴 농산물...식탁과 지구를 바꾼다 </p>
+                    }}>[슬기로운 환경생활] 못생긴 농산물...식탁과 지구를 바꾼다</span></p>
                 </div>
                 <div className='aboutUs_article' >
-                    <p onClick={()=>{
+                    <p><span onClick={()=>{
                         window.open("https://www.yna.co.kr/view/AKR20211020149300505");
-                    }}>[SNS세상] "못생겨도 괜찮아"...못난이 농산물의 맛있는 반란 </p>
+                    }}>[SNS세상] "못생겨도 괜찮아"...못난이 농산물의 맛있는 반란</span></p>
                 </div>
             </div>
 

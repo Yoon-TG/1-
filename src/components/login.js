@@ -1,9 +1,12 @@
 import '../compCss/login.css';
 import { useState } from 'react';
 import { Collapse, Form, Button } from 'react-bootstrap';
+import { Navigate, useHref, useNavigate } from 'react-router-dom';
 
 
 function Login(){
+
+    let navigate = useNavigate();
 
     const [showLog, setShowLog] = useState(false);
 
@@ -12,7 +15,7 @@ function Login(){
         <div className='loginCon'>
         <p className='bannerHeader'>로그인·회원가입</p>
         <div className='kakaoLog' onClick={()=>{
-            <a href="https://accounts.kakao.com/login/?continue=https%3A%2F%2Fkauth.kakao.com%2Foauth%2Fauthorize%3Fresponse_type%3Dcode%26redirect_uri%3Dhttps%253A%252F%252Fuglyus.co.kr%252Flogin%252Fkakao%252Fcallback%26state%3D%252Fmain%26through_account%3Dtrue%26client_id%3D06e56dda757545d5dd6bd11300c03f5c" />
+            window.open("https://accounts.kakao.com/login/?continue=https%3A%2F%2Fkauth.kakao.com%2Foauth%2Fauthorize%3Fresponse_type%3Dcode%26redirect_uri%3Dhttps%253A%252F%252Fuglyus.co.kr%252Flogin%252Fkakao%252Fcallback%26state%3D%252Fmain%26through_account%3Dtrue%26client_id%3D06e56dda757545d5dd6bd11300c03f5c")
         }} />
         <p onClick={()=>{
             setShowLog(!showLog)
@@ -32,8 +35,8 @@ function Login(){
                     <p style={{textAlign:'right', cursor:'pointer', color:'gray'}}><span>이메일 찾기</span>&nbsp;<span> 비밀번호 찾기</span></p>
                     
                     <Button variant="primary" type="submit" onClick={()=>{
-                        alert("아이디 혹은 비밀번호가 일치하지 않습니다.")
-                        
+                        alert("아이디 혹은 비밀번호가 일치하지 않습니다.");
+                        navigate("/login"); //새로고침 되는 효과 주기
                     }}>
                         로그인
                     </Button>

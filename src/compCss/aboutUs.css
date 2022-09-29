@@ -178,13 +178,13 @@
     height: 100px;
     /* background-color: #3D8361; */
     border-top: 2px solid thistle;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 200;
     line-height: 100px;
     text-align: left;
 }
 
-.aboutUs_article p{
+.aboutUs_article span{
     cursor: pointer;
 }
 

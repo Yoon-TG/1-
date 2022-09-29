@@ -21,9 +21,9 @@ function MainPage(){
           <p>못생겨도 맛있다</p>
           <p>친환경 못난이 채소박스</p>
           <p className='under' style={{fontWeight:'100', fontSize:'15px', color:'#707070'}}>조금씩 다양하게, 불필요한 낭비없이</p>
-          <button onClick={()=>{
-            navigate("/Manual")
-          }}>시작하기</button>
+          <a href='/manual'>
+            <button>시작하기</button>
+          </a>
         </div>
 
 
@@ -107,9 +107,10 @@ function MainPage(){
                 </p>     
               </div>   
             
-              <span style={{position:'relative', top:'0px',left:'350px', textAlign:'left', color:'#EB6440', cursor:'pointer'}} onClick={()=>{
-                navigate("/manual");
-              }}>구독 신청하기&gt;</span>
+              <a href='/manual' 
+              style={{position:'relative', top:'0px',left:'350px', textAlign:'left', color:'#EB6440', textDecoration:'none'}}>
+                구독 신청하기&gt;
+              </a>
         </div>
 
 
@@ -150,9 +151,9 @@ function MainPage(){
         </div>
 
       <div className='seventhBannerButtonBox'>
-          <button className='seventhBannerButton' onClick={()=>{
-                navigate("/manual");
-              }}>시작하기</button>
+        <a href='/manual'>
+          <button className='seventhBannerButton'>시작하기</button>
+        </a>
       </div>
 
       <div className='lastBanner'>

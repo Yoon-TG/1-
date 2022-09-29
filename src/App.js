@@ -19,7 +19,7 @@ function Main() {
       <div className='navbar'>
         <Navbar>
           <Container>
-            <Navbar.Brand className='brandImg' href="/main">
+            <Navbar.Brand className='brandImg' href={process.env.PUBLIC_URL + "/main"}>
               <img src={process.env.PUBLIC_URL+'/navImg/test.jpg'}></img>
             </Navbar.Brand>
             <Nav className="me-auto">

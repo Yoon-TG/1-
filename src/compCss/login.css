@@ -14,7 +14,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    left: 200px;
+    left: 140px;
     border: 1px solid none;
     border-radius: 5px;
     cursor: pointer;
@@ -26,7 +26,7 @@
     width: 400px;
     height: 70px;
     position: relative;
-    left: 200px;
+    left: 140px;
 }
 
 .emailLog Button{
@@ -40,6 +40,7 @@
     margin-top: 10px;
 }
 
-.emailLog span{
+.emailLog #sign{
     color: #EB6440;
+    cursor: pointer;
 }

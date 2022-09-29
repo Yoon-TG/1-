@@ -12,8 +12,8 @@
 }
 
 .manualMainTopBanner {
-    padding-top: 120px;
-    padding-left: 350px;
+    padding-top: 90px;
+    padding-left: 270px;
     width: 100%;
     height: 450px;
     background-image: url(https://ik.imagekit.io/uhpparxr6/manual/manual-header-pc_c61AtU6ui.png?ik-sdk-version=javascript-1.4.3&updatedAt=1659487157051);
@@ -27,10 +27,7 @@
 }
 
 .manualMainTopBanner button {
-    margin-top: 0px;
     position: relative;
-    left: 0px;
-    top: 0px;
     width: 150px;
     height: 45px;
     background-color: #FF6741;
@@ -75,7 +72,7 @@
 }
 
 .manualMainFirstBanner{
-    padding: 100px 150px 100px 150px;
+    padding: 100px 130px 100px 130px;
     background-color: #FFF7ED;
     font-size: 30px;
     font-weight: bold;
@@ -96,8 +93,8 @@
 }
 
 .manualMainStep1, .manualMainStep2, .manualMainStep3{
-    margin: 100px 0px 100px 0px;
-    padding: 0px 150px 0px 150px;
+    margin: 100px 0px 120px 0px;
+    padding: 0px 130px 0px 130px;
 }
 
 .stepNum{
@@ -175,7 +172,7 @@
 
 #manualButton{
     position: relative;
-    left: 510px;
+    left: 450px;
     margin-bottom: 50px;
     width: 400px;
     height: 50px;
@@ -187,7 +184,7 @@
 
 .manualMainSecondBanner{
     margin: 100px 0px 0px 0px;
-    padding: 80px 150px 0px 170px;
+    padding: 80px 130px 0px 170px;
     height: 450px;
     background-color: rgb(245, 245, 247);
     background-image: url('https://ik.imagekit.io/uhpparxr6/manual/manual-vegetable-box-pc_7N-2b1uho.png?ik-sdk-version=javascript-1.4.3&updatedAt=1659064383653');
@@ -213,7 +210,7 @@
 }
 
 .manualMainThirdBanner{
-    padding: 80px 150px 0px 170px;
+    padding: 80px 130px 0px 130px;
     height: 450px;
     color: white;
     text-align: center;
@@ -227,7 +224,7 @@
 }
 
 .manualMainLastBanner{
-    padding: 80px 150px 0px 170px;
+    padding: 80px 130px 0px 130px;
     height: 300px;
     background-color: rgb(245, 245, 247);
     color: #353535;
@@ -267,13 +264,14 @@
 }
 
 .inputButton {
-    margin-bottom: 80px;
+    margin-bottom: 70px;
     color: white;
     background-color: gray;
     width: 100px;
     height: 50px;
     position: relative;
-    left: 50px;
+    top: -2px;
+    left: 90px;
     border: 1px solid gray;
     border-radius: 3px;
 }
@@ -283,8 +281,8 @@
     margin-bottom: 50px;
     width: 100%;
     height: 60px;
-    background-color: #EEF2E6;
-    border: 1px solid #EEF2E6;
+    background-color: #FFF7ED;
+    border: 1px solid #FFF7ED;
     border-radius: 5px;
     display: flex;
     justify-content: center;
@@ -294,13 +292,13 @@
 .QuestionNav button {
     margin-right: 50px;
     width: 100px;
-    background-color: #EEF2E6;
-    border: 1px solid #EEF2E6;
+    background-color: #FFF7ED;
+    border: 1px solid #FFF7ED;
     border-radius: 5px;
 }
 
 .QuestionNav button:hover {
     height: 70%;
-    background-color: #3D8361;
+    background-color: #FF6741;
     color: white;
 }

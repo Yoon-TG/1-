@@ -62,7 +62,7 @@ function Store(){
                                         src="https://ik.imagekit.io/uhpparxr6/uglyus-prod/5491-040692-9875.jpg?tr=w-471"
                                     />
                                     <p><span>해남</span></p>
-                                    <p>무농약 꿀무화과 - 1kg/2kg</p>
+                                    <p>무농약 꿀무화과 1kg/2kg</p>
                                     <p><span id="percent">18%</span> 21,900원</p>
                                 </Figure>
                             </Col>
@@ -88,9 +88,9 @@ function Store(){
                                         src="https://ik.imagekit.io/uhpparxr6/uglyus-prod/49bd2e0d-9283-4d96-94cb-195260889c7c.jpeg?tr=w-471"
                                         style={{objectFit:'contain'}}
                                     />
-                                    <p><span>청송</span></p>
-                                    <p>껍질째 먹는 청송 얼음골 사과 시나노 골드 - 2.5kg/5kg</p>
-                                    <p><span id="percent">20%</span> 27,600원</p>
+                                    <p><span>문경</span></p>
+                                    <p>무농약 포포 1kg/2kg</p>
+                                    <p><span id="percent">18%</span> 30,000원</p>
                                 </Figure>
                             </Col>
                         </Row>
@@ -110,7 +110,7 @@ function Store(){
                                         src='https://ik.imagekit.io/uhpparxr6/uglyus-prod/5492-872003-9934.jpeg?tr=w-471'
                                     />
                                     <p><span>영천</span></p>
-                                    <p>무농약 유럽상추1kg</p>
+                                    <p>무농약 유럽상추 1kg</p>
                                     <p><span id="percent">10%</span> 16,200원</p>
                                 </Figure>
                             </Col>
@@ -123,7 +123,7 @@ function Store(){
                                         src='https://ik.imagekit.io/uhpparxr6/uglyus-prod/0726297b-91be-4402-aaa8-447320c1480d.jpg?tr=w-471'
                                     />
                                     <p><span>산청</span></p>
-                                    <p>무농약 태추단감 - 2.5kg</p>
+                                    <p>무농약 태추단감 2.5kg</p>
                                     <p><span id="percent">19%</span> 22,500원</p>
                                 </Figure>
                             </Col>
@@ -137,7 +137,7 @@ function Store(){
                                         style={{objectFit:'contain'}}
                                     />
                                     <p><span>부여</span></p>
-                                    <p>껍질째 먹는 친환경 사과대추 - 1kg/2kg</p>
+                                    <p>껍질째 먹는 친환경 사과대추 1kg/2kg</p>
                                     <p><span id="percent">25%</span> 22,200원</p>
                                 </Figure>
                             </Col>
@@ -152,7 +152,7 @@ function Store(){
                                         src="https://ik.imagekit.io/uhpparxr6/uglyus-prod/49bd2e0d-9283-4d96-94cb-195260889c7c.jpeg?tr=w-471"
                                     />
                                     <p><span>문경</span></p>
-                                    <p>무농약 포포 - 1kg/2kg</p>
+                                    <p>무농약 포포 1kg/2kg</p>
                                     <p><span id="percent">18%</span> 30,000원</p>
                                 </Figure>
                             </Col>
@@ -165,7 +165,7 @@ function Store(){
                                         src='https://ik.imagekit.io/uhpparxr6/uglyus-prod/2435db46-2759-44dc-bcb8-a84f7c518f46.jpg?tr=w-471'
                                         />
                                     <p><span>창원</span></p>
-                                    <p>껍질째 먹는 GAP 창원 태추단감 부유단감 대봉 2.5kg/4.5kg</p>
+                                    <p>껍질째 먹는 GAP 창원 태추단감 <br/> 부유단감 대봉 2.5kg/4.5kg</p>
                                     <p><span id="percent">14%</span> 24,800원</p>
                                 </Figure>
                             </Col>
@@ -179,7 +179,8 @@ function Store(){
                                         style={{objectFit:'contain'}}
                                     />
                                     <p><span>익산</span></p>
-                                    <p>친환경 쌀 긴급구출 - 신동진 탑마루 2kg/10kg</p>
+                                    <p>친환경 쌀 긴급구출 - 신동진 탑마루 <br/>
+                                    2kg/10kg</p>
                                     <p><span id="percent">45%</span> 10,900원</p>
                                 </Figure>
                             </Col>
@@ -214,10 +215,8 @@ function Store(){
                             <Col>
                                 <Figure>
                                     <Figure.Image
-                                        width={300}
-                                        height={300}
                                         alt="171x180"
-                                        src='https://ik.imagekit.io/uhpparxr6/uglyus-prod/c5fb7e3e-3fba-4a92-aa6a-3bfd6943dded.jpg?tr=w-471'
+                                        src='https://ik.imagekit.io/uhpparxr6/uglyus-prod/5445-276569-4713.png?tr=w-471'
                                         style={{objectFit:'contain'}}
                                     />
                                     <p><span>아산</span></p>

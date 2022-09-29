@@ -28,7 +28,8 @@ function MainPage(){
 
 
         <div className='firSecBetweenBanner'>          
-            <img style={{width: 'auto', height:'130px'}} src='https://ik.imagekit.io/uhpparxr6/main/main_vp/main_vp_pc_cBSZrC968.png?ik-sdk-version=javascript-1.4.3&updatedAt=1655786748538&ik-sdk-version=react-1.1.1'></img>
+            <img style={{width: 'auto', height:'130px'}} 
+            src='https://ik.imagekit.io/uhpparxr6/main/main_vp/main_vp_pc_cBSZrC968.png?ik-sdk-version=javascript-1.4.3&updatedAt=1655786748538&ik-sdk-version=react-1.1.1'></img>
         </div>
         
         <div className='secondBanner' > 

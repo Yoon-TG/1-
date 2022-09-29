@@ -80,7 +80,7 @@ function AboutUs(){
                 {/* <p className="bannerHeader" style={{paddingLeft:'20px', textAlign:'left'}}>어글리어스는</p> */}
                 <Container>
                     <Row>
-                        <Col style={{marginRight:'20px'}}>
+                        <Col>
                             <img src="https://images.unsplash.com/photo-1570358934836-6802981e481e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"></img>
                             <p className="pHeader">환경을 생각합니다</p>
                             <p>농산물이 폐기되며 발생하는 메탄 가스 등은<br />
@@ -89,7 +89,7 @@ function AboutUs(){
                                 추가적으로 발생하는 자원과 노동력 낭비 또한 줄입니다.
                             </p>
                         </Col>
-                        <Col style={{marginRight:'20px'}}>
+                        <Col>
                             <img src={process.env.PUBLIC_URL+'/navImg/coll.jpg'}></img>
                             <p className="pHeader">불필요한 낭비를 막습니다</p>
                             <p>농산물을 겉모습으로 판단하던 기존의 기준에서 벗어나, <br />
@@ -111,7 +111,6 @@ function AboutUs(){
             {/* 짤막한 배너 */}
             <div className="aboutUs_fourthBanner">
                 <p className="bannerHeader" style={{textAlign:'center'}}>못난이 농산물 구출이 어떤 변화를 만들고 있을까요?</p>
-                {/* 애니메이션 추가 > 숫자 올라가도록 */}
                 <div className="containerText">
                 <Container>
                         <Row>

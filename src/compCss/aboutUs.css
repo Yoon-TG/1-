@@ -1,24 +1,9 @@
 /* 소개 aboutUs 부분 */
-@font-face {
-    font-family: 'Pretendard-Regular';
-    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
-}
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    /* text-align: center; */
-    font-family: 'Pretendard-Regular';
-}
 
 .bannerHeader {
     font-weight: bold;
     font-size: 24px;
 }
-
 
 .topBanner {
     width: 100%;
@@ -79,12 +64,11 @@
 }
 
 .aboutUs_secondBanner {
-    /* margin-bottom: 30px; */
     padding-top: 150px;
     width: 100%;
     height: 500px;
     text-align: center;
-    opacity: 0.8;
+    opacity: 1;
 }
 
 @keyframes showup {
@@ -98,7 +82,7 @@
     100% {
         opacity: 1;
         transform: translate(0, 0);
-        color: forestgreen;
+        color: #FF6741;
         font-weight: bolder;
     }
 }
@@ -106,7 +90,7 @@
 .aniTo {
     position: relative;
     animation: showup 5s;
-    color: forestgreen;
+    color: #FF6741;
     font-size: 30px;
     font-weight: bolder;
 }
@@ -120,8 +104,8 @@
 }
 
 .aboutUs_thirdBanner img {
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     object-fit: cover;
 }
 
@@ -135,12 +119,9 @@
 .aboutUs_fourthBanner {
     margin-bottom: 150px;
     padding-top: 70px;
-    /* padding-left:150px; */
     width: 100%;
     height: 500px;
-    /* background-color: rgba(12, 118, 56, 0.43);  */
-    background-color: #3D8361;
-    color: #f0f3e9;
+    background-color: #FFF7ED;
 }
 
 .aboutUs_fourthBanner .containerText {

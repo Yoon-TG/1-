@@ -58,17 +58,16 @@ function Main() {
       </Routes>
 
       <div className='footer'>
-        <a href='/login'>
           <button className='askButton' onClick={()=>{
             alert('먼저 로그인하세요.');
+            navigate('/login');
           }}>문의하기</button>
-        </a>
         <a href='/manual/FAQ'>
           <button className='FAQButton'>자주 묻는 질문</button>
         </a>
 
-        <p>어글리어스 고객센터<span className='footerRightTxt'>02.1234.5678</span></p>
-        
+        <p>어글리어스 고객센터 &nbsp;&nbsp; <span className='footerRightTxt'>02.1234.5678</span></p>
+
         <p>월-목요일 <span className='footerRightTxt'>11:00 ~ 18:00 (점심시간 12:00 ~ 13:00)</span></p>
         <p>금요일        <span className='footerRightTxt'>09:00 ~ 18:00 (점심시간 12:00 ~ 13:00)</span></p>
         <p>토·일·공휴일 <span className='footerRightTxt'>휴무</span></p>

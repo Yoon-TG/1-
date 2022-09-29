@@ -17,11 +17,11 @@ function Login(){
         <div className='kakaoLog' onClick={()=>{
             window.open("https://accounts.kakao.com/login/?continue=https%3A%2F%2Fkauth.kakao.com%2Foauth%2Fauthorize%3Fresponse_type%3Dcode%26redirect_uri%3Dhttps%253A%252F%252Fuglyus.co.kr%252Flogin%252Fkakao%252Fcallback%26state%3D%252Fmain%26through_account%3Dtrue%26client_id%3D06e56dda757545d5dd6bd11300c03f5c")
         }} />
-        <p onClick={()=>{
+        <p ><span onClick={()=>{
             setShowLog(!showLog)
         }}  aria-controls="example-collapse-text"
         aria-expanded={showLog} 
-        style={{cursor:"pointer"}}>이메일로 계속하기 ∨</p>
+        style={{cursor:"pointer"}}>이메일로 계속하기 ∨</span></p>
         
         <Collapse in={showLog}>
             <div className='emailLog'>
@@ -40,7 +40,7 @@ function Login(){
                     }}>
                         로그인
                     </Button>
-                    <p>아직 회원이 아니신가요? &nbsp;<span>회원가입</span> </p>
+                    <p>아직 회원이 아니신가요? &nbsp;<span id='sign'>회원가입</span> </p>
                 </Form>
             </div>
         </Collapse>

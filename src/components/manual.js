@@ -14,7 +14,9 @@ function Manual(){
                 <p className='bannerHeader'>합리적 가격, 선물같은 설렘 <br/>
                 어글리어스 채소박스</p>
                 <a href="/login">
-                    <button>시작하기</button>
+                    <button onClick={()=>{
+                      alert("먼저 로그인하세요!")
+                    }}>시작하기</button>
                 </a>
           </div>
 
@@ -27,7 +29,6 @@ function Manual(){
               }}>자주 묻는 질문</button>
               <button disabled>리뷰</button>
           </div>
-          
           <Outlet />
         </div>
     )

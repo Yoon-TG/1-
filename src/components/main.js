@@ -64,14 +64,13 @@ function MainPage(){
           <img src='https://ik.imagekit.io/uhpparxr6/pc_vegetable_stories_type_B_ml8MCK4Oj.png?ik-sdk-version=javascript-1.4.3&updatedAt=1655081841582&ik-sdk-version=react-1.1.1'></img>
         </div>
 
-
-          {/* 연습~~ */}
-
           <div className='fifthBanner'>
             <div className='fifthBannerImg'>
-              <img src="https://ik.imagekit.io/uhpparxr6/main-solution1.png?ik-sdk-version=react-1.1.1"></img>
-              <img src=""></img>
-              <img src=""></img>
+              <img id='img1'
+              src="https://ik.imagekit.io/uhpparxr6/main/mo_problem_1.svg?ik-sdk-version=react-1.1.1"></img>
+              <img id='img2'
+              src="https://ik.imagekit.io/uhpparxr6/main/mo_problem_2.svg?ik-sdk-version=react-1.1.1"></img>
+              <img src="https://ik.imagekit.io/uhpparxr6/main/mo_problem_3.svg?ik-sdk-version=react-1.1.1"></img>
             </div>
             <p style={{color:'#707070', lineHeight:'0px', position:'relative', top:'5px' }}>이렇게 해결해요</p>
             <p className='bannerHeader'>
@@ -166,9 +165,6 @@ function MainPage(){
           소비자의 건강한 식탁과 미래를 위한 환경이 지속가능하게 합니다.
         </p>
         <a href='/aboutUs' style={{textDecoration:'none', color:'white', fontWeight:'normal'}}>더 알아보기 &gt;</a>
-        {/* <p style={{cursor:'pointer'}} onClick={()=>{
-          navigate("/aboutUs")
-        }}>더 알아보기&gt;</p> */}
         
         <p className='bannerHeader' style={{wordSpacing:'50px', marginTop:'70px'}}>339,664kg+ 259 208,508개</p>
         <p > 구출한 농산물 <span>함께 하는 농가</span>  <span>아낀 플라스틱</span></p>

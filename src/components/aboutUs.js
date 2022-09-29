@@ -25,7 +25,8 @@ function AboutUs(){
                     </video>
                 </div>
                 <div className="topBannerText">
-                <p>'못난이 농산물'을 아시나요?</p>
+                    <p style={{fontWeight:'100', fontSize:'25px', color:'white', textAlign:'center', marginTop:'-120px'}}>우리의 미션</p>
+                    <p>지속 가능한 식탁을 만듭니다</p>
                 </div>
             </div>
 
@@ -70,14 +71,11 @@ function AboutUs(){
                 </div>
             </div>
 
-            {/* 여기에 스크롤 애니메이션 넣을 거임 -배경: 하얀색 - > 초록색 / 글자 가 위에서 아래로 스르륵*/}
             <div className='aboutUs_secondBanner'>
                 <ShowBanner />
             </div>
 
-            {/* 여기에 그리드 3개 -> 글 */}
             <div className='aboutUs_thirdBanner'>
-                {/* <p className="bannerHeader" style={{paddingLeft:'20px', textAlign:'left'}}>어글리어스는</p> */}
                 <Container>
                     <Row>
                         <Col>
@@ -108,7 +106,6 @@ function AboutUs(){
                 </Container>
             </div>
 
-            {/* 짤막한 배너 */}
             <div className="aboutUs_fourthBanner">
                 <p className="bannerHeader" style={{textAlign:'center'}}>못난이 농산물 구출이 어떤 변화를 만들고 있을까요?</p>
                 <div className="containerText">
@@ -116,7 +113,6 @@ function AboutUs(){
                         <Row>
                             <Col>
                                 <p className="containerTextTopic">구출한 농산물</p>
-                                {/* <p className="containerTextContent">349,335kg+</p> */}
                                 <p className="containerTextContent">349,335kg+</p>
                             </Col>
                             <Col>
@@ -135,10 +131,8 @@ function AboutUs(){
                     </Container>
                     </div>
                     <p style={{position:'relative', top:'100px', textAlign:'center', color:'#EEF2E6'}}>함께 못난이 농산물을 구출해나가며 지구를 위한 분명한 변화를 만들고 있습니다.</p>
-                    {/* paddingLeft:'130px' */}
             </div>
 
-            {/* 여기에 블로그 글 이동+더 보러가기(우선은 블로그 링크 이동하게 온클릭 걸어두기) */}
             <div className="aboutUs_fifthBanner">
                 <p className="bannerHeader" style={{textAlign:'left', paddingBottom:'30px'}}>어글리어스가 전하는 농산물 이야기</p>
                     <Container>
@@ -193,35 +187,23 @@ function AboutUs(){
                     }}>[SNS세상] "못생겨도 괜찮아"...못난이 농산물의 맛있는 반란</span></p>
                 </div>
             </div>
-
-            {/* 여기에 파트너사.. (이런 곳과 함께하고 있어요! - 사회적 기업, 농수산품 가공업체 등등-흘러가는 이미지~여도 재밋겟다) */}
-            {/* <div className="aboutUs_lastBanner">
-                <p className="bannerHeader" style={{textAlign:'center'}}>이런 곳과 함께하고 있어요!</p>
-                <div className="aboutUs_lastBannerImg">
-                    
-                    
-                </div>
-            </div> */}
         </div>
     )
 }
 
 
-
-
 function ShowBanner(){
     let [opaClass, setOpaClass] = useState('');
-
+    
     useEffect(()=>{
         const timeout = setTimeout(()=>{
             setOpaClass('aniTo');
-        },300); 
+        },500); 
             return()=>{
                 setOpaClass('');
                 clearTimeout(timeout);
             }
         },[])
-    
 
     return(
         <div className={opaClass}>

@@ -15,9 +15,6 @@
 }
 
 .FirstBanner p {
-    /* position: relative;
-    left: 200px;
-    top: 170px; */
     font-weight: bold;
     font-size: 24px;
     line-height: 15px;
@@ -89,7 +86,6 @@
 .aniImg {
     width: 100%;
     height: 400px;
-    /* position: relative; */
     overflow: hidden;
 }
 
@@ -118,10 +114,6 @@
     top: -400px;
     display: flex;
     flex-wrap: nowrap;
-    /* position: absolute;
-    top: 1058px;
-    display: flex;
-    flex-wrap: nowrap; */
     animation: bannermove2 20s linear infinite;
 }
 
@@ -177,21 +169,20 @@
     height: 500px;
 }
 
-/* 연습~~ */
-
-.fifthBanner {
+.fifthBanner{
     margin: 130px 0px 130px 0px;
     padding-left: 200px;
     padding-right: 140px;
     text-align: left;
 }
 
-.fifthBannerImg img {
+.fifthBannerImg img{
     width: 450px;
     height: 480px;
     position: absolute;
     left: 700px;
 }
+
 
 .fifthBannerText1,
 .fifthBannerText2,
@@ -206,8 +197,6 @@
     background-color: #FFEDDF;
     border-radius: 70%;
     position: absolute;
-    /* position: relative;
-    top: 40px; */
     z-index: 1;
 }
 

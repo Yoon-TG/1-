@@ -19,11 +19,11 @@ function Main() {
       <div className='navbar'>
         <Navbar>
           <Container>
-            <Navbar.Brand className='brandImg' href={process.env.PUBLIC_URL + "/main"}>
+            <Navbar.Brand className='brandImg' href="/main">
               <img src={process.env.PUBLIC_URL+'/navImg/test.jpg'}></img>
             </Navbar.Brand>
             <Nav className="me-auto">
-            <Nav.Link href="/1-/aboutUs">소개</Nav.Link>
+            <Nav.Link href="/aboutUs">소개</Nav.Link>
             <Nav.Link href="/manual/">이용방법</Nav.Link>
             <Nav.Link href="/store">못난이 상점</Nav.Link>
             <Nav.Link className='cartImg' onClick={()=>{

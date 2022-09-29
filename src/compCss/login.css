@@ -35,3 +35,11 @@
     background-color: #EB6440;
     border: 1px solid #EB6440;
 }
+
+.emailLog p{
+    margin-top: 10px;
+}
+
+.emailLog span{
+    color: #EB6440;
+}

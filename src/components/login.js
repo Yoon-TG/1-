@@ -40,6 +40,7 @@ function Login(){
                     }}>
                         로그인
                     </Button>
+                    <p>아직 회원이 아니신가요? &nbsp;<span>회원가입</span> </p>
                 </Form>
             </div>
         </Collapse>
